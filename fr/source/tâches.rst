@@ -80,6 +80,34 @@ Par exemple, vous pouvez soumettre une tâche aux nœuds APC de David Sénéchal
 avec ``--partition=iq-apc``. La durée maximale des tâches varie selon la
 partition et est indiquée dans le tableau des nœuds.
 
+Ressources disponibles
+----------------------
+
+La commande ``susage`` affiche les ressources allouées ou disponibles dans une
+ou plusieurs partitions. Utilisée sans option ni argument, elle affiche les
+ressources allouées dans les partitions auxquelles vous avez accès :
+
+.. code-block:: console
+
+    [alice@ip09 ~]$ susage
+    iq-main:  nodes: (2+1)/4 cpus: 104/336 mem: 1.0T/2.0T gpus: 0/2
+              ██████▓▓▓░░░░░ ████░░░░░░░░░ ███████░░░░░░░ ░░░░░░░░░
+    iq-alice:                cpus: 192/192 mem: 612G/2.2T
+                             █████████████ ████░░░░░░░░░░
+
+À titre d’exemple, pour afficher les ressources disponibles, avec une légende,
+dans la partition ``iq-main`` seulement :
+
+.. code-block:: console
+
+    [alice@ip09 ~]$ susage --available --legend iq-main
+    iq-main: nodes: (1+1)/4 cpus: 232/336 mem: 1.0T/2.0T gpus: 2/2
+             ███▓▓▓░░░░░░░░ █████████░░░░ ███████░░░░░░░ █████████
+
+    Resources are reported as available/total. For nodes, (idle+mixed) are
+    reported. Mixed nodes are those with both allocated and idle CPUs. █ indicates
+    available resources, ░ allocated resources, and ▓ nodes in the mixed state.
+
 Gestion des tâches
 ------------------
 
