@@ -76,6 +76,30 @@ the corresponding partition with ``-p`` ``--partition``. Refer to the
 ``--partition=iq-apc`` to submit a job to David Sénéchal’s APC nodes. Maximum
 job duration varies depending on the partition and is noted in the node table.
 
+Available resources
+-------------------
+
+The ``susage`` command shows allocated or available resources in one or more
+partitions. Used with no option or argument, it shows the allocated resources in
+the partitions you have access to:
+
+.. code-block:: console
+
+    [alice@ip09 ~]$ susage
+    iq-main:  nodes: (2+1)/4 cpus: 104/336 mem: 1.0T/2.0T gpus: 0/2
+              ██████▓▓▓░░░░░ ████░░░░░░░░░ ███████░░░░░░░ ░░░░░░░░░
+    iq-alice:                cpus: 192/192 mem: 612G/2.2T
+                             █████████████ ████░░░░░░░░░░
+
+As an example, to show available resources, with a legend, only for the
+``iq-main`` partition:
+
+.. code-block:: console
+
+    [alice@ip09 ~]$ susage --available --legend iq-main
+    iq-main: nodes: (1+1)/4 cpus: 232/336 mem: 1.0T/2.0T gpus: 2/2
+             ███▓▓▓░░░░░░░░ █████████░░░░ ███████░░░░░░░ █████████
+
 Job management
 --------------
 
