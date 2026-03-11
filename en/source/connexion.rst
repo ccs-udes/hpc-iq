@@ -59,7 +59,6 @@ Finally, you will get a message indicating that the connection was successful:
 
     Success. Logging you in...
     Last login: Wed Apr  9 10:45:16 2025 from 24.203.57.88
-    ################################################################################
       _____ ____
      |_   _/ __ \   Plateforme CHP-IQ / IQ HPC Platform
        | || |  | |
@@ -67,7 +66,7 @@ Finally, you will get a message indicating that the connection was successful:
       _| || |__| |                en: https://institut-quantique-udes.github.io/en
      |_____\___\_\     Support fr/en: olivier.fisette@usherbrooke.ca
 
-    [...]
+    [alice@ip09 ~]$
 
 .. seealso::
    - `SSH <https://docs.alliancecan.ca/wiki/SSH/en>`_ (Alliance technical
