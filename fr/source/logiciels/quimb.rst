@@ -13,19 +13,19 @@ Installation
     module load python/3.11.5
     virtualenv --no-download $HOME/venv/quimb
     source $HOME/venv/quimb/bin/activate
-    pip install --no-index quimb==1.11.1
+    pip install --no-index quimb==1.12.1
 
 Pour générer des figures :
 
 .. code-block:: bash
 
-    pip install --no-index matplotlib==3.10.1 networkx==3.5
+    pip install --no-index matplotlib==3.10.8 networkx==3.6.1
 
 Pour utiliser Jax comme moteur d’optimisation :
 
 .. code-block:: bash
 
-    pip install --no-index jax==0.6.0
+    pip install --no-index jax==0.8.3
 
 Pour utiliser Autograd comme moteur d’optimisation :
 
