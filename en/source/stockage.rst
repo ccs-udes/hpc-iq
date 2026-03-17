@@ -4,7 +4,7 @@ Storage
 Home directory
 --------------
 
-Your home directory is accessible et ``$HOME``. For instance:
+Your home directory is accessible at ``$HOME``. For instance:
 
 .. code-block:: console
 
