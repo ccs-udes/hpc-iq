@@ -59,9 +59,9 @@ envergure, voyez le `guide de démarrage
    compte
    connexion
    stockage
-   nœuds
-   tâches
    logiciels/index
+   tâches
+   nœuds
    résumé
 
 .. toctree::

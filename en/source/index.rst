@@ -57,9 +57,9 @@ research projects, see the Alliance `Getting Started
    compte
    connexion
    stockage
-   nœuds
-   tâches
    logiciels/index
+   tâches
+   nœuds
    résumé
 
 .. toctree::
