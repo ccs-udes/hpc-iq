@@ -74,9 +74,8 @@ Contributed nodes
 
 To run a job on one or more contributed nodes to which you have access, request
 the corresponding partition with ``-p`` ``--partition``. Refer to the
-:ref:`contributed nodes <contrib-label>` table. For instance, use
-``--partition=iq-apc`` to submit a job to David Sénéchal’s APC nodes. Maximum
-job duration varies depending on the partition and is noted in the node table.
+:ref:`contributed nodes <contrib-label>` table. Maximum job duration varies
+depending on the partition.
 
 Available resources
 -------------------
