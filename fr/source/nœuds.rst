@@ -1,6 +1,8 @@
 Nœuds de calcul
 ===============
 
+.. _public-label:
+
 Publics
 -------
 
@@ -12,6 +14,8 @@ Contribués
 ----------
 
 .. include:: nœuds/contrib.rst
+
+.. _gh-label:
 
 Grace Hopper
 ------------

@@ -1,6 +1,8 @@
 Compute nodes
 =============
 
+.. _public-label:
+
 Public
 ------
 
@@ -12,6 +14,8 @@ Contributed
 -----------
 
 .. include:: nœuds/contrib.rst
+
+.. _gh-label:
 
 Grace Hopper
 ------------

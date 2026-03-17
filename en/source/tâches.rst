@@ -41,14 +41,16 @@ short form ``-p``. For example, in a job script:
 
     ...
 
-Maximum job duration is seven days.
+The Platform offers three compute nodes with 96 CPU cores and 500G of memory.
+Maximum job duration is seven days. Refer to the :ref:`public nodes
+<public-label>` table for more details.
 
 GPU jobs
 ''''''''
 
-The IQ HPC Platform offers one GPU compute node with two Nvidia A40 GPUs, which
+The Platform also offers one GPU compute node with two Nvidia A40 GPUs, which
 can be requested with the ``--gpus-per-node``, ``--gpus-per-task``, and
-``--gres`` options.
+``--gres`` options. The same node has 48 CPU cores and 500G of memory.
 
 For example, to use one GPU in an interactive job:
 
