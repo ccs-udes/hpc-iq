@@ -82,6 +82,27 @@ corresponding partitions, separated by a comma. For example:
 ``--partition=iq-main,iq-alice``. The public nodes will be used preferentially.
 Partion order has no effect.
 
+Shared access
+'''''''''''''
+
+Some contributed nodes are shared with all IQ researchers via the ``iq-preempt``
+partition. However, jobs submitted to this partition are automatically cancelled
+if the owner of a node where they are running needs it for his own jobs. The
+owner thus has a “preemption right”.
+
+Cancelled jobs receive a ``SIGTERM`` signal and have one minute to save their
+partial results. A job thus cancelled may request to be requeued with the
+``--requeue`` option.
+
+The ``iq-preempt`` partition is useful for batches of short jobs and for jobs
+that use software able to write checkpoints to resume an interrupted
+calculation.
+
+To use both the public and shared nodes, use ``--partition=iq-main,iq-preempt``.
+The public nodes will be used preferentially. To use the public nodes, the
+shared nodes, and one or more contributed nodes, use e.g.
+``--partition=iq-main,iq-alice,iq-preempt``.
+
 Available resources
 -------------------
 
