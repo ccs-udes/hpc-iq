@@ -77,6 +77,11 @@ the corresponding partition with ``-p`` ``--partition``. Refer to the
 :ref:`contributed nodes <contrib-label>` table. Maximum job duration varies
 depending on the partition.
 
+To use both the public nodes and one or more contributed nodes, list the
+corresponding partitions, separated by a comma. For example:
+``--partition=iq-main,iq-alice``. The public nodes will be used preferentially.
+Partion order has no effect.
+
 Available resources
 -------------------
 

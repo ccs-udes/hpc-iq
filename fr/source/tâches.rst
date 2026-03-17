@@ -81,6 +81,11 @@ accès, demandez la partition correspondante avec ``-p`` ``--partition``.
 Référez-vous au tableau des :ref:`nœuds de calcul contribués <contrib-label>`.
 La durée maximale des tâches varie selon la partition.
 
+Pour utiliser à la fois les nœuds publics et un ou plusieurs nœuds contribués,
+listez les partitions correspondantes, séparées par des virgules. Par exemple :
+``--partition=iq-main,iq-alice``. Les nœuds publics seront utilisés
+préférentiellement. L’ordre des partitions n’a aucun effet.
+
 Ressources disponibles
 ----------------------
 
