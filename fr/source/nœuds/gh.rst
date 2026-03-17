@@ -1,0 +1,84 @@
+.. list-table::
+   :header-rows: 1
+   :width: 1280px
+   :widths: 11 9 5 5 17 21 5 11 10
+
+   * - Partition(s)
+     - Nœud(s)
+     - Cœurs
+     - Mémoire
+     - CPU
+     - GPU
+     - Stockage
+     - Limite de temps (jours)
+     - Propriétaire(s)
+   * - ``gh-blais``
+
+       ``gh-preempt``
+     - ``gh130[2-4]``
+
+       (total : 3)
+     - 72
+     - 465G
+
+       (0,45T)
+     - Neoverse V2 ARMv9
+
+       ``grace``
+     - 1 x Nvidia GH200 96G
+
+       ``nvidia_gh200_480gb``
+     - 11T
+     - 7
+     - \A. Blais
+   * - ``gh-blais``
+
+       ``gh-preempt``
+     - ``gh1306``
+     - 144
+     - 934G
+
+       (0,91T)
+     - 2 x Neoverse V2 ARMv9
+
+       ``grace``
+     - 2 x Nvidia GH200 144G HBM3E
+
+       ``nvidia_gh200_144gb_hbm3e``
+     - 3,4T
+     - 7
+     - \A. Blais
+   * - ``gh-blais``
+
+       ``gh-preempt``
+     - ``gh1307``
+     - 72
+     - 465G
+
+       (0,45T)
+     - 1 x Neoverse V2 ARMv9
+
+       ``grace``
+     - 1 x Nvidia GH200 144G HBM3E
+
+       ``nvidia_gh200_144gb_hbm3e``
+     - 3,4T
+     - 7
+     - \A. Blais
+   * - ``gh-aria``
+
+       ``gh-preempt``
+     - ``gh1305``
+     - 72
+     - 465G
+
+       (0,45T)
+     - 1 x Neoverse V2 ARMv9
+
+       ``grace``
+     - 1 x Nvidia GH200 96G
+
+       ``nvidia_gh200_480gb``
+     - 3,4T
+     - 7
+     - \S. Kourtis
