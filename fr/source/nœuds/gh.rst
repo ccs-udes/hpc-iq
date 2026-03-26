@@ -76,9 +76,9 @@
      - 1 x Neoverse V2 ARMv9
 
        ``grace``
-     - 1 x Nvidia GH200 96G
+     - 1 x Nvidia GH200 144G HBM3E
 
-       ``nvidia_gh200_480gb``
+       ``nvidia_gh200_144gb_hbm3e``
      - 3,4T
      - 7
      - \S. Kourtis
