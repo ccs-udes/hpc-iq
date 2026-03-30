@@ -87,6 +87,7 @@ envergure, voyez le `guide de démarrage
    :caption: Liens externes
    :hidden:
 
+   Logiciels développés à l’IQ <https://www.physique.usherbrooke.ca/quantique-udes>
    Documentation technique de l’Alliance <https://docs.alliancecan.ca/wiki/Technical_documentation/fr>
    Formations de Calcul Québec <https://www.calculquebec.ca/services-aux-chercheurs/formation/>
    Portail CCDB <https://ccdb.alliancecan.ca/>

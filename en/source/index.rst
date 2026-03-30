@@ -85,6 +85,7 @@ research projects, see the Alliance `Getting Started
    :caption: External links
    :hidden:
 
+   Software developed at the IQ <https://www.physique.usherbrooke.ca/quantique-udes>
    Alliance Technical Documentation <https://docs.alliancecan.ca/wiki/Technical_documentation/en>
    Calcul Québec Training <https://www.calculquebec.ca/en/academic-research-services/training/>
    CCDB Portal <https://ccdb.alliancecan.ca/>
