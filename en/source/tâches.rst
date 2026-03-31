@@ -85,10 +85,10 @@ Partion order has no effect.
 Shared access
 '''''''''''''
 
-Some contributed nodes are shared with all IQ researchers via the ``iq-preempt``
-partition. However, jobs submitted to this partition are automatically cancelled
-if the owner of a node where they are running needs it for his own jobs. The
-owner thus has a “preemption right”.
+Some contributed nodes are shared via the ``iq-preempt`` partition. If your
+research group contributes a compute node, you can use the partition. However,
+submitted jobs are automatically cancelled if the owner of a node where they are
+running needs it for his own jobs. The owner thus has a “preemption right”.
 
 Cancelled jobs receive a ``SIGTERM`` signal and have one minute to save their
 partial results. A job thus cancelled may request to be requeued with the
