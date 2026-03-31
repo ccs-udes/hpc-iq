@@ -28,6 +28,8 @@
      - 28
      - \A. Blais
    * - ``iq-aphex``
+
+       ``iq-preempt``
      - ``cp3701``
      - 48
      - 1004G
@@ -73,6 +75,8 @@
      - 7
      - \B. Royer
    * - ``iq-softcorr``
+
+       ``iq-preempt``
      - ``cp3710``
      - 384
      - 1508G
