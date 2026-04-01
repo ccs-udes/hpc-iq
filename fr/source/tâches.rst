@@ -107,7 +107,9 @@ Pour utiliser à la fois les nœuds publics et les nœuds partagés, utilisez
 ``--partition=iq-main,iq-preempt``. Les nœuds publics seront utilisés
 préférentiellement. Pour utiliser à la fois les nœuds publics, les nœuds
 partagés et un ou plusieurs nœuds contribués, utilisez e.g.
-``--partition=iq-main,iq-alice,iq-preempt``.
+``--partition=iq-main,iq-alice,iq-preempt``. Pour exclure un nœud particulier,
+tel que le vôtre pour le réserver à d’autres tâches, ajoutez e.g.
+``--exclude=cp3799``.
 
 Ressources disponibles
 ----------------------

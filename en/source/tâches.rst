@@ -101,7 +101,8 @@ calculation.
 To use both the public and shared nodes, use ``--partition=iq-main,iq-preempt``.
 The public nodes will be used preferentially. To use the public nodes, the
 shared nodes, and one or more contributed nodes, use e.g.
-``--partition=iq-main,iq-alice,iq-preempt``.
+``--partition=iq-main,iq-alice,iq-preempt``. To exclude a specific node, such as
+your own to reserve it for other jobs, add e.g. ``--exclude=cp3799``.
 
 Available resources
 -------------------
