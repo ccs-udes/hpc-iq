@@ -14,9 +14,9 @@ Installation
     source $HOME/venv/qiskit/bin/activate
     pip install --no-index --upgrade pip
     pip install --no-index qiskit==2.3.1
-    # Optional Aer simulator
+    # Optionnel : simulateur Aer
     pip install --no-index qiskit-aer==0.17.2
-    # Optional GPU support in Aer
+    # Optionnel : support des GPU dans Aer
     pip install --no-index qiskit-aer-gpu==0.17.2
-    # Optional package for natural science problems
+    # Optionnel : paquet pour les problèmes en sciences naturelles
     pip install --no-index qiskit-nature==0.7.2
