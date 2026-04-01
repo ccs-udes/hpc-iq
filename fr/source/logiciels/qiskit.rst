@@ -13,6 +13,10 @@ Installation
     virtualenv --no-download $HOME/venv/qiskit
     source $HOME/venv/qiskit/bin/activate
     pip install --no-index --upgrade pip
-    pip install --no-index qiskit==2.0.2 qiskit-aer
-    # Pour le support GPU
-    pip install --no-index qiskit-aer-gpu
+    pip install --no-index qiskit==2.3.1
+    # Optional Aer simulator
+    pip install --no-index qiskit-aer==0.17.2
+    # Optional GPU support in Aer
+    pip install --no-index qiskit-aer-gpu==0.17.2
+    # Optional package for natural science problems
+    pip install --no-index qiskit-nature==0.7.2
