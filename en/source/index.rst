@@ -10,9 +10,6 @@ Institut Quantique High-Performance Computing Platform
 
    - Researchers in a hurry should at least read this page and the :doc:`summary
      <résumé>` before running their first job.
-   - Beginners should check out our pages about learning :doc:`Linux
-     <apprentissage/linux>` and :doc:`high-performance computing
-     <apprentissage/chp>`.
    - Cette documentation est également disponible en `français
      <https://institut-quantique-udes.github.io/fr/>`_.
 
@@ -71,15 +68,6 @@ research projects, see the Alliance `Getting Started
    aide/faq
    aide/liste
    aide/support
-
-.. toctree::
-   :caption: Training
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
-
-   apprentissage/linux
-   apprentissage/chp
 
 .. toctree::
    :caption: External links

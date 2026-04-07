@@ -10,9 +10,6 @@ Plateforme de calcul haute performance de l’Institut quantique
 
    - Les chercheurs pressés devraient au miminum lire cette page ainsi que le
      :doc:`résumé <résumé>` avant de lancer leur première tâche.
-   - Les chercheurs débutants devraient consulter nos pages sur l’apprentissage
-     de :doc:`Linux <apprentissage/linux>` et du :doc:`calcul haute performance
-     <apprentissage/chp>`.
    - This documentation is also available in `English
      <https://institut-quantique-udes.github.io/en/>`_.
 
@@ -73,15 +70,6 @@ envergure, voyez le `guide de démarrage
    aide/faq
    aide/liste
    aide/support
-
-.. toctree::
-   :caption: Apprentissage
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
-
-   apprentissage/linux
-   apprentissage/chp
 
 .. toctree::
    :caption: Liens externes

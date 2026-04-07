@@ -7,8 +7,7 @@ Lancer des tâches
    pas familier avec les commandes pour lancer et gérer des tâches (telles que
    ``sbatch``, ``salloc``, ``squeue``), lisez d’abord `Exécuter des tâches
    <https://docs.alliancecan.ca/wiki/Running_jobs/fr>`_ dans la documentation de
-   l’Alliance ou consultez notre page sur l’apprentissage du :doc:`CHP
-   <apprentissage/chp>`.
+   l’Alliance.
 
 Nœuds de connexion
 ------------------

@@ -7,8 +7,7 @@ Running jobs
    familiar with job submission and management commands (such as ``sbatch``,
    ``salloc``, ``squeue``), read `Running jobs
    <https://docs.alliancecan.ca/wiki/Running_jobs/fr>`_ from the Alliance
-   technical documentation first or check our page about learning :doc:`HPC
-   <apprentissage/chp>`.
+   technical documentation first.
 
 Login nodes
 -----------
