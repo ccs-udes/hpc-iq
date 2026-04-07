@@ -4,7 +4,7 @@ Institut Quantique Computing Cluster
 .. important::
 
    - Researchers in a hurry should at least read this page and the :doc:`summary
-     <résumé>` before running their first job.
+     <summary>` before running their first job.
    - Cette documentation est également disponible en `français
      <https://institut-quantique-udes.github.io/fr/>`_.
 
@@ -46,13 +46,13 @@ projects, see the Alliance `Getting Started
    :titlesonly:
    :hidden:
 
-   compte
-   connexion
-   stockage
-   logiciels/index
-   tâches
-   nœuds
-   résumé
+   account
+   connect
+   storage
+   software/index
+   jobs
+   nodes
+   summary
 
 .. toctree::
    :caption: Help
@@ -60,9 +60,9 @@ projects, see the Alliance `Getting Started
    :titlesonly:
    :hidden:
 
-   aide/faq
-   aide/liste
-   aide/support
+   help/faq
+   help/list
+   help/support
 
 .. toctree::
    :caption: External links
@@ -77,4 +77,4 @@ projects, see the Alliance `Getting Started
 
    This documentation is managed by the CCS. For any question or comment or to
    report a mistake or an issue, contact our :doc:`technical support
-   <aide/support>`.
+   <help/support>`.

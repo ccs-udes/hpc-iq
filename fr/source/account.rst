@@ -5,7 +5,7 @@ Pour obtenir l'accès à la Grappe IQ :
 
 1. Créez un compte `CCDB <https://ccdb.alliancecan.ca/>`_.
 2. Activez l’authentification multifacteur dans CCDB.
-3. Abonnez-vous à notre :doc:`liste de diffusion <aide/liste>`.
+3. Abonnez-vous à notre :doc:`liste de diffusion <help/list>`.
 
 Créer un compte CCDB
 --------------------

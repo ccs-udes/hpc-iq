@@ -14,13 +14,13 @@ Your home directory is accessible at ``$HOME``. For instance:
 This is the right location for configuration files, your code, and software that
 you install. Due to limited capacity and performance, it is not the right
 location for research data and you should not use it to read and write such data
-when :doc:`running jobs <tâches>`.
+when :doc:`running jobs <jobs>`.
 
 Research data
 -------------
 
 Research data is stored on a 190T server accessible at ``/net/nfs-iq/data``. Use
-this locaton to read and write data when :doc:`running jobs <tâches>`; it offers
+this locaton to read and write data when :doc:`running jobs <jobs>`; it offers
 better IO (input/output) performance than your home directory.
 
 To ensure safety in case of a drive failure, research data is redundant,

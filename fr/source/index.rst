@@ -4,7 +4,7 @@ Grappe de calcul de l’Institut quantique
 .. important::
 
    - Les chercheurs pressés devraient au miminum lire cette page ainsi que le
-     :doc:`résumé <résumé>` avant de lancer leur première tâche.
+     :doc:`résumé <summary>` avant de lancer leur première tâche.
    - This documentation is also available in `English
      <https://institut-quantique-udes.github.io/en/>`_.
 
@@ -47,13 +47,13 @@ démarrage <https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ de l’Allian
    :titlesonly:
    :hidden:
 
-   compte
-   connexion
-   stockage
-   logiciels/index
-   tâches
-   nœuds
-   résumé
+   account
+   connect
+   storage
+   software/index
+   jobs
+   nodes
+   summary
 
 .. toctree::
    :caption: Aide
@@ -61,9 +61,9 @@ démarrage <https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ de l’Allian
    :titlesonly:
    :hidden:
 
-   aide/faq
-   aide/liste
-   aide/support
+   help/faq
+   help/list
+   help/support
 
 .. toctree::
    :caption: Liens externes
@@ -78,4 +78,4 @@ démarrage <https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ de l’Allian
 
    Cette documentation est gérée par le CCS. Pour toute question ou commentaire
    ou pour rapporter une erreur ou un problème, contactez notre :doc:`soutien
-   technique <aide/support>`.
+   technique <help/support>`.

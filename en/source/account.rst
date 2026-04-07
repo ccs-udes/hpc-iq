@@ -5,7 +5,7 @@ To get access to the IQ Cluster:
 
 1. Create a `CCDB <https://ccdb.alliancecan.ca/>`_ account.
 2. Activate multifactor authentification in CCDB.
-3. Subscribe to our :doc:`mailing list <aide/liste>`.
+3. Subscribe to our :doc:`mailing list <help/list>`.
 
 Creating a CCDB account
 -----------------------

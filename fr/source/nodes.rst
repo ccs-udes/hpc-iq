@@ -6,18 +6,18 @@ Nœuds de calcul
 Publics
 -------
 
-.. include:: nœuds/public.rst
+.. include:: nodes/public.rst
 
 .. _contrib-label:
 
 Contribués
 ----------
 
-.. include:: nœuds/contrib.rst
+.. include:: nodes/contrib.rst
 
 .. _gh-label:
 
 Grace Hopper
 ------------
 
-.. include:: nœuds/gh.rst
+.. include:: nodes/gh.rst

@@ -15,14 +15,14 @@ C’est le bon emplacement pour vos fichiers de configuration, votre code et les
 logiciels que vous installez. Dû à sa capacité et à sa performance limitées, ce
 n’est pas le bon emplacement pour vos données de recherche et vous ne devriez
 pas l’utiliser pour lire et écrire de telles données lorsque vous :doc:`exécutez
-des tâches <tâches>`.
+des tâches <jobs>`.
 
 Données de recherche
 --------------------
 
 Les données de recherche sont stockées sur un serveur de 190T accessible à
 ``/net/nfs-iq/data``. Assurez-vous d’utiliser cet emplacement pour lire et
-écrire des données lorsque vous :doc:`exécutez des tâches <tâches>` ; il offre
+écrire des données lorsque vous :doc:`exécutez des tâches <jobs>` ; il offre
 une meilleure performance entrée-sortie (« input/output, IO ») que votre
 répertoire personnel.
 
