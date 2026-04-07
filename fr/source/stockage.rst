@@ -84,4 +84,4 @@ Interconnexion avec la grappe MP2
 Le stockage pour les données de recherche, ``/net/nfs-iq/data``, est
 accessible à partir des nœuds de connexion et de calcul de MP2. Les stockages
 ``/project`` et ``/scratch`` de MP2 ne sont pas accessibles à partir de la
-plateforme CHP-IQ.
+Grappe IQ.

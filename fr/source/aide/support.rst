@@ -2,8 +2,8 @@ Soutien technique
 =================
 
 En plus de répondre à vos questions et de vous aider avec toute difficulté
-rencontrée avec la plateforme CHP-IQ et sa documentation, nous sommes
-disponibles si vous avez besoin de formation sur Linux, le CHP, etc.
+rencontrée avec la Grappe IQ et sa documentation, nous sommes disponibles si
+vous avez besoin de formation sur Linux, le CHP, etc.
 
 Le soutien technique est assuré par Olivier Fisette (analyste CIP) avec l’aide
 des autres membres de l’équipe du CCS.
@@ -12,8 +12,8 @@ Avant toute chose…
 ------------------
 
 Lisez la documentation avant de nous contacter. Nous la mettons à jour pour
-refléter les changements apportés à la plateforme ainsi que les questions
-passées. La vôtre a peut-être déjà une réponse !
+refléter les changements apportés à la grappe ainsi que les questions passées.
+La vôtre a peut-être déjà une réponse !
 
 Lorsque vous nous contactez, **incluez autant de détails que possible** : id de
 votre tâche, chemin d’accès de vos fichiers, les logiciels que vous utilisez,

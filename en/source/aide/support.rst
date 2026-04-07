@@ -2,8 +2,8 @@ Technical support
 =================
 
 In addition to answering your questions and helping you with any difficulties
-encountered while using the IQ HPC Platform, we are available if you require
-training about Linux, HPC, etc.
+encountered while using the IQ Cluster, we are available if you require training
+about Linux, HPC, etc.
 
 Technical support is provided by Olivier Fisette (HPC analyst) with the help of
 the other CCS team members.
@@ -12,7 +12,7 @@ Before anything else…
 ---------------------
 
 Read the documentation before contacting us. We update it to reflect the changes
-made to the platform and past questions. Perhaps yours already has an answer!
+made to the cluster and past questions. Perhaps yours already has an answer!
 
 When contacting us, **include as many details as possible**: the job id, the
 path to your files, the software you use, a description of the issue, how you

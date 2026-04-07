@@ -28,8 +28,8 @@ Résumé
     Les stockages ``/project`` et ``/scratch`` de MP2 ne sont pas accessibles.
 
 **Accès à partir de MP2**
-    Le stockage des données de recherche de la plateforme CHP-IQ est accessible
-    à partir de MP2 à ``/net/nfs-iq/data``.
+    Le stockage des données de recherche de la Grappe IQ est accessible à partir
+    de MP2 à ``/net/nfs-iq/data``.
 
 **Logiciels de l’Alliance**
     - Commande ``module`` pour les paquets logiciels

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Plateforme de calcul haute performance de l’Institut quantique
-==============================================================
+Grappe de calcul de l’Institut quantique
+========================================
 
 .. important::
 
@@ -13,32 +13,31 @@ Plateforme de calcul haute performance de l’Institut quantique
    - This documentation is also available in `English
      <https://institut-quantique-udes.github.io/en/>`_.
 
-La plateforme de calcul haute performance (CHP) de l’`Institut quantique (IQ)
-<https://www.usherbrooke.ca/iq/>`_ est une grappe de calcul de petite taille
-réservée aux chercheurs de l’IQ et à leurs collaborateurs, gérée par le `Centre
-de calcul scientifique (CCS) <https://www.ccs.usherbrooke.ca/>`_ de
+La Grappe de calcul de l’`Institut quantique (IQ)
+<https://www.usherbrooke.ca/iq/>`_ est un service de calcul haute performance
+(CHP) réservé aux chercheurs de l’IQ et à leurs collaborateurs, géré par le
+`Centre de calcul scientifique (CCS) <https://www.ccs.usherbrooke.ca/>`_ de
 l’`Université de Sherbrooke <https://www.usherbrooke.ca/>`_. En plus de nœuds de
 calcul et d’un espace de stockage disponibles pour tous les chercheurs de l’IQ,
-la plateforme contient des nœuds contribués par des chercheurs spécifiques et
-dont l’utilisation est restreinte. Les chercheurs peuvent utiliser la plateforme
-sans limite et sans frais. Les coûts sont assumés grâce à une subvention de la
+la grappe contient des nœuds contribués par des chercheurs spécifiques et dont
+l’utilisation est restreinte. Les chercheurs peuvent utiliser la grappe sans
+limite et sans frais. Les coûts sont assumés grâce à une subvention de la
 Fondation canadienne pour l’innovation (FCI).
 
-La configuration de la plateforme CHP-IQ est similaire à celle des grappes
-nationales gérées par l’Alliance de recherche numérique du Canada (auparavant
-Calcul Canada) : environnement Linux, logiciels disponibles, commandes pour
-lancer et gérer les tâches, etc. La `documentation technique de l’Alliance
+La configuration de la Grappe IQ est similaire à celle des grappes nationales
+gérées par l’Alliance de recherche numérique du Canada (auparavant Calcul
+Canada) : environnement Linux, logiciels disponibles, commandes pour lancer et
+gérer les tâches, etc. La `documentation technique de l’Alliance
 <https://docs.alliancecan.ca/wiki/Technical_documentation/fr>`_ s’applique donc
-également à la plateforme CHP-IQ et déplacer un calcul d’une grappe à une autre
-ne demande qu’un effort minime.
+également à la Grappe IQ et déplacer un calcul d’une grappe à une autre ne
+demande qu’un effort minime.
 
-La plateforme CHP-IQ sert de ressource intermédiaire et de tremplin vers les
-grappes de calcul plus puissantes de l’Alliance. Lorsqu’une station de travail
-individuelle n’est pas suffisante pour exécuter tous vos calculs ou stocker vos
-données, la plateforme CHP-IQ vous permet d’augmenter rapidement vos
-possibilités. Pour vos projets de recherche computationnelle de plus grande
-envergure, voyez le `guide de démarrage
-<https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ de l’Alliance.
+La Grappe IQ sert de ressource intermédiaire et de tremplin vers les grappes de
+calcul plus puissantes de l’Alliance. Lorsqu’une station de travail individuelle
+n’est pas suffisante pour exécuter tous vos calculs ou stocker vos données, la
+Grappe IQ vous permet d’augmenter rapidement vos possibilités. Pour vos projets
+de recherche computationnelle de plus grande envergure, voyez le `guide de
+démarrage <https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ de l’Alliance.
 
 .. toctree::
    :caption: Langue | Language

@@ -33,8 +33,8 @@ Mon calcul est beaucoup plus lent que sur mon portable
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Vous avez testé un programme parallèle sur votre portable (ou un autre
-ordinateur). Ce programme fonctionne aussi dans une tâche sur la plateforme
-CHP-IQ mais il est beaucoup plus lent. Que se passe-t-il ?
+ordinateur). Ce programme fonctionne aussi dans une tâche sur la Grappe IQ mais
+il est beaucoup plus lent. Que se passe-t-il ?
 
 D’abord, assurez-vous d’utiliser le même nombre de cœurs CPU sur votre portable
 et dans votre tâche pour que la comparaison soit valide. Par exemple, si votre

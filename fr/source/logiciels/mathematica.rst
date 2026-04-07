@@ -52,6 +52,6 @@ Pour utiliser Mathematica dans une tâche interactive :
 Graphiques
 ----------
 
-Mathematica ne peut être utilisé en mode graphique sur la Plateforme CHP-IQ. Les
-tâches doivent être réalisées en mode texte, soit avec des scripts
-(``wolframscript``) ou interactivement (``wolfram``).
+Mathematica ne peut être utilisé en mode graphique sur la Grappe IQ. Les tâches
+doivent être réalisées en mode texte, soit avec des scripts (``wolframscript``)
+ou interactivement (``wolfram``).

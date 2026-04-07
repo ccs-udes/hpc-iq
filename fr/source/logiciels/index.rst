@@ -1,13 +1,13 @@
 Logiciels
 =========
 
-Lorsque vous vous connectez à la plateforme CHP-IQ, votre environnement ne
-contient initialement qu’un petit nombre de logiciels. Vous pouvez en ajouter à
-partir du large éventail de `logiciels disponibles
+Lorsque vous vous connectez à la Grappe IQ, votre environnement ne contient
+initialement qu’un petit nombre de logiciels. Vous pouvez en ajouter à partir du
+large éventail de `logiciels disponibles
 <https://docs.alliancecan.ca/wiki/Available_software/fr>`_. Pré-installés et
 optimisés pour le CHP, ces logiciels sont les mêmes qui sont disponibles sur les
-grappes de la plateforme nationale, ce qui vous assure que vos tâches peuvent
-être exécutées de manière reproductible sur toutes les grappes.
+grappes nationales, ce qui vous assure que vos tâches peuvent être exécutées de
+manière reproductible sur toutes les grappes.
 
 L’ajout de logiciels à votre environnement se fait principalement à l’aide de la
 commande ``module``. Si vous n’êtes pas familier avec son utilisation, lisez
@@ -134,9 +134,9 @@ Version de l’environnement logiciel
 
 L’équipe de l’Alliance en charge des logiciels crée périodiquement de nouvelles
 versions de l’environnement, par exemple ``StdEnv/2023`` ou ``StdEnv/2020``. Sur
-la plateforme CHP-IQ, ``StdEnv/2023`` est l’environnement initialement chargé
-lorsque vous vous connectez. Les autres environnements sont disponibles et
-peuvent être chargés. Par exemple :
+la Grappe IQ, ``StdEnv/2023`` est l’environnement initialement chargé lorsque
+vous vous connectez. Les autres environnements sont disponibles et peuvent être
+chargés. Par exemple :
 
 .. code-block:: console
 
@@ -157,9 +157,9 @@ peuvent être chargés. Par exemple :
 Cible d’optimisation
 --------------------
 
-Les logiciels de l’Alliance disponibles sur la plateforme CHP-IQ sont optimisés
-pour l’utilisation de processeurs x86 qui supportent le jeu d’instructions AVX2.
-Ces logiciels n’ont pas été compilés pour utiliser de jeux d’instructions plus
+Les logiciels de l’Alliance disponibles sur la Grappe IQ sont optimisés pour
+l’utilisation de processeurs x86 qui supportent le jeu d’instructions AVX2. Ces
+logiciels n’ont pas été compilés pour utiliser de jeux d’instructions plus
 récents tels qu’AVX512. C’est le meilleur choix pour supporter à la fois les
 processeurs Intel et AMD des nœuds de calcul tout en assurant une bonne
 performance. Si vous compilez votre code avec GCC, l’option d’optimisation
@@ -176,16 +176,15 @@ Bibliothèques BLAS/LAPACK
 
 Les logiciels de l’Alliance offrent plusieurs implémentations des bibliothèques
 `BLAS et LAPACK <https://docs.alliancecan.ca/wiki/BLAS_and_LAPACK/fr>`_ pour
-l’algèbre linéaire. Intel MKL est utilisé par défaut sur la plateforme CHP-IQ et
-la plupart des grappes de l’Alliance.
+l’algèbre linéaire. Intel MKL est utilisé par défaut sur la Grappe IQ et la
+plupart des grappes de l’Alliance.
 
 Guides logiciels
 ----------------
 
 Les pages suivantes portent sur l’utilisation de logiciels spécifiques. Certains
-sont également disponibles sur les grappes de la plateforme nationale, auquel
-cas l’accent est mis sur les particularités de leur utilisation avec la
-plateforme CHP-IQ.
+sont également disponibles sur les grappes nationales, auquel cas l’accent est
+mis sur les particularités de leur utilisation avec la Grappe IQ.
 
 .. toctree::
    :maxdepth: 1

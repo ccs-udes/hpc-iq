@@ -77,4 +77,4 @@ MP2 cluster interconnection
 
 Research data storage in ``/net/nfs-iq/data`` is accessible from the MP2 login
 and compute nodes. MP2’s ``/project`` and ``/scratch`` storage are not
-accessible from the IQ HPC Platform.
+accessible from the IQ Cluster.

@@ -13,8 +13,8 @@ simulation.
 License
 -------
 
-La plateforme CHP-IQ a un serveur de licence CMC Microsystems dédié pour Ansys.
-Chaque utilisateur doit configurer sa license :
+La Grappe IQ a un serveur de licence CMC Microsystems dédié pour Ansys. Chaque
+utilisateur doit configurer sa license :
 
 #. Créez le fichier ``~/.licences/ansys.lic`` avec ce contenu :
 
@@ -25,7 +25,7 @@ Chaque utilisateur doit configurer sa license :
 
 #. Envoyez un courriel à CMC Microsystems (`mcsupport@cmc.ca`) avec votre nom
    complet, le nom de la personne qui vous fournit la license, votre nom
-   d’utilisateur sur la plateforme CHP-IQ et l’adresse du serveur de licence
+   d’utilisateur sur la Grappe IQ et l’adresse du serveur de licence
    (``ip39.ccs.usherbrooke.ca``).
 
 #. CMC Microsystem activera votre licence en quelques heures, au plus quelques

@@ -31,8 +31,8 @@ My computation is much slower than on my laptop
 '''''''''''''''''''''''''''''''''''''''''''''''
 
 You tested a parallel program on your laptop (or another computer). The program
-also works in a job on the IQ HPC Platform but is much slower there. What is
-going on?
+also works in a job on the IQ Cluster but is much slower there. What is going
+on?
 
 First, make sure to use the same number of CPU cores on your laptop and in your
 job to ensure the comparison is valid. For instance, if your laptop has 8 cores

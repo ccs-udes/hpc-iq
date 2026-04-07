@@ -192,7 +192,7 @@ than the number of allocated CPU cores. The ``multiprocessing`` module, in
 particular, starts by default as many threads as there are CPU cores, with no
 regards to whether or not these cores are accessible. For example, by default,
 ``multiprocessing`` would start 64 execution threads when used in a job
-allocated to an IQ HPC Platform CPU node, even if you requested only 2, 4, or 8
+allocated to an IQ Cluster CPU node, even if you requested only 2, 4, or 8
 cores.
 
 This problem is compounded when using parallelised functions that also start as

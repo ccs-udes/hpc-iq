@@ -26,7 +26,7 @@ Summary
     MP2 ``/project`` and ``/scratch`` storage are not accessible.
 
 **Access from MP2**
-    The IQ HPC Platform’s research data storage is accessible from MP2 at
+    The IQ Cluster’s research data storage is accessible from MP2 at
     ``/net/nfs-iq/data``.
 
 **Alliance software**

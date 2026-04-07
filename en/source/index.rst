@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Institut Quantique High-Performance Computing Platform
-======================================================
+Institut Quantique Computing Cluster
+====================================
 
 .. important::
 
@@ -13,29 +13,29 @@ Institut Quantique High-Performance Computing Platform
    - Cette documentation est également disponible en `français
      <https://institut-quantique-udes.github.io/fr/>`_.
 
-The `Institut quantique (IQ) <https://www.usherbrooke.ca/iq/>`_ High-Performance
-Computing Platform is a small-scale cluster for IQ researchers and their
-collaborators, managed by the `Centre de calcul scientifique (CCS)
+The `Institut quantique (IQ) <https://www.usherbrooke.ca/iq/>`_ Computing
+Cluster is a high-performance computing (HPC) service for IQ researchers and
+their collaborators, managed by the `Centre de calcul scientifique (CCS)
 <https://www.ccs.usherbrooke.ca/>`_ at the `Université de Sherbrooke
 <https://www.usherbrooke.ca/>`_. In addition to compute nodes and storage space
-available to all IQ researchers, the platform hosts contributed hardware from a
+available to all IQ researchers, the cluster hosts contributed hardware from a
 number of research groups, access to which is restricted. There are no usage
 limitations or fees. Costs are assumed through a Canada Foundation for
 Innovation (CFI) grant.
 
-The IQ HPC Platform is configured similarly to the national clusters managed by
-the Digital Research Alliance of Canada (formerly Compute Canada): Linux
+The IQ Cluster is configured similarly to the national clusters managed by the
+Digital Research Alliance of Canada (formerly Compute Canada): Linux
 environment, available software, task submission and management commands, etc.
 The `Alliance Technical Documentation
 <https://docs.alliancecan.ca/wiki/Technical_documentation/en>`_ therefore also
-applies to the IQ HPC Platform, and moving a calculation from one cluster to
-another requires only minimal effort.
+applies to the IQ Cluster, and moving a calculation from one cluster to another
+requires only minimal effort.
 
-The IQ HPC Platform is meant as an intermediate resource and a springboard to
-the more powerful Alliance clusters. When a personal workstation is not enough
-to carry out your calculations or store your data, the IQ HPC Platform allows
-you to quickly scale up your possibilities. For more demanding computational
-research projects, see the Alliance `Getting Started
+The IQ Cluster is meant as an intermediate resource and a springboard to the
+more powerful Alliance clusters. When a personal workstation is not enough to
+carry out your calculations or store your data, the IQ Cluster allows you to
+quickly scale up your possibilities. For more demanding computational research
+projects, see the Alliance `Getting Started
 <https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ guide.
 
 .. toctree::

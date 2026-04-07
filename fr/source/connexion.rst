@@ -1,12 +1,12 @@
 Connexion
 =========
 
-L’accès à la plateforme CHP-IQ se fait par SSH (Secure Shell). L’adresse de la
-grappe est ``hpc.iq.ccs.usherbrooke.ca``.
+L’accès à la Grappe IQ se fait par SSH (Secure Shell). L’adresse de la grappe
+est ``hpc.iq.ccs.usherbrooke.ca``.
 
 Les systèmes d’exploitation récents (Linux, MacOS, Windows 11) incluent
-habituellement un client SSH. Pour vous connecter à la plateforme en mode ligne
-de commande, ouvrez d’abord une fenêtre de terminal (nommé PowerShell dans
+habituellement un client SSH. Pour vous connecter à la grappe en mode ligne de
+commande, ouvrez d’abord une fenêtre de terminal (nommé PowerShell dans
 Windows). Dans cette fenêtre, utilisez la commande ``ssh`` pour établir une
 connexion :
 
@@ -64,7 +64,7 @@ Finalement, vous obtiendrez un message indiquant que la connexion a été
     Success. Logging you in...
     Last login: Wed Apr  9 10:45:16 2025 from 24.203.57.88
       _____ ____
-     |_   _/ __ \   Plateforme CHP-IQ / IQ HPC Platform
+     |_   _/ __ \   Grappe IQ / IQ Cluster
        | || |  | |
        | || |  | |  Documentation fr: https://institut-quantique-udes.github.io/fr
       _| || |__| |                en: https://institut-quantique-udes.github.io/en
@@ -110,5 +110,4 @@ La page `Clés SSH <https://docs.alliancecan.ca/wiki/SSH_Keys/fr>`_ de la
 documentation technique de l’Alliance explique comment générer une paire de clés
 et installer la clé publique sur le serveur. Pour l’installation, suivez les
 instructions de la section `Par le fichier authorized_keys` plutôt que `Via
-CCDB` puisque la plateforme CHP-IQ n’utilise pas les clés SSH de votre compte
-CCDB.
+CCDB` puisque la Grappe IQ n’utilise pas les clés SSH de votre compte CCDB.

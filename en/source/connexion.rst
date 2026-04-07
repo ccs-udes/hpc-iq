@@ -1,11 +1,11 @@
 Connecting
 ==========
 
-Access the IQ HPC Platform is through SSH (Secure Shell). The cluster’s address
-is ``hpc.iq.ccs.usherbrooke.ca``.
+Access the IQ Cluster is through SSH (Secure Shell). The cluster’s address is
+``hpc.iq.ccs.usherbrooke.ca``.
 
 Récent operating systems (Linux, MacOS, Windows 11) typically include an SSH
-client. To connect to the platform in command line mode, first open a terminal
+client. To connect to the cluster in command line mode, first open a terminal
 window (called PowerShell in Windows). In that window, use the ``ssh`` command
 to connect:
 
@@ -60,7 +60,7 @@ Finally, you will get a message indicating that the connection was successful:
     Success. Logging you in...
     Last login: Wed Apr  9 10:45:16 2025 from 24.203.57.88
       _____ ____
-     |_   _/ __ \   Plateforme CHP-IQ / IQ HPC Platform
+     |_   _/ __ \   Grappe IQ / IQ Cluster
        | || |  | |
        | || |  | |  Documentation fr: https://institut-quantique-udes.github.io/fr
       _| || |__| |                en: https://institut-quantique-udes.github.io/en
@@ -103,4 +103,4 @@ The `SSH Keys <https://docs.alliancecan.ca/wiki/SSH_Keys/en>`_ page in the
 Alliance technical documentation explains how to generate a key pair and install
 the public key on the server. To install the key, follow the instructions in the
 `Using the authorized_keys file` section rather than `Using CCDB` since the IQ
-HPC Platform does not use the SSH keys in your CCDB account.
+Cluster does not use the SSH keys in your CCDB account.

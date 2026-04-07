@@ -3,9 +3,9 @@ Running jobs
 
 .. note::
 
-   This page covers the specifics of the IQ HPC Platform. If you are not
-   familiar with job submission and management commands (such as ``sbatch``,
-   ``salloc``, ``squeue``), read `Running jobs
+   This page covers the specifics of the IQ Cluster. If you are not familiar
+   with job submission and management commands (such as ``sbatch``, ``salloc``,
+   ``squeue``), read `Running jobs
    <https://docs.alliancecan.ca/wiki/Running_jobs/fr>`_ from the Alliance
    technical documentation first.
 
@@ -40,14 +40,14 @@ short form ``-p``. For example, in a job script:
 
     ...
 
-The Platform offers three compute nodes with 96 CPU cores and 500G of memory.
+The IQ Cluster offers three compute nodes with 96 CPU cores and 500G of memory.
 Maximum job duration is seven days. Refer to the :ref:`public nodes
 <public-label>` table for more details.
 
 GPU jobs
 ''''''''
 
-The Platform also offers one GPU compute node with two Nvidia A40 GPUs, which
+The IQ Cluster also offers one GPU compute node with two Nvidia A40 GPUs, which
 can be requested with the ``--gpus-per-node``, ``--gpus-per-task``, and
 ``--gres`` options. The same node has 48 CPU cores and 500G of memory.
 

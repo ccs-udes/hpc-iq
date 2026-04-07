@@ -57,7 +57,7 @@ pour expérimenter avec des options :
 
     Les auteurs de Pyqcm `rapportent une faible performance avec BLIS
     <https://qcm-wed.readthedocs.io/en/stable/parallel.html#numerical-integration>`_.
-    Sur la plateforme CHP-IQ, Intel MKL est utilisé par défaut à travers
+    Sur la Grappe IQ, Intel MKL est utilisé par défaut à travers
     l’interface FlexiBLAS.
 
 .. seealso::

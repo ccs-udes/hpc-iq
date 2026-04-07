@@ -12,8 +12,8 @@ Ansys is a software suite for engineering simulation and 3D design.
 License
 -------
 
-The IQ HPC Platform has a CMC Microsystems license server dedicated to Ansys.
-Each user must configure their license:
+The IQ Cluster has a CMC Microsystems license server dedicated to Ansys. Each
+user must configure their license:
 
 #. Create the ``~/.licences/ansys.lic`` file with this content:
 
@@ -24,7 +24,7 @@ Each user must configure their license:
 
 #. Send an email to CMC Microsystems (`mcsupport@cmc.ca`) with your full name,
    the name of the person providing you withe the license, your username on the
-   IQ HPC Platform, and the address of the license server
+   IQ Cluster, and the address of the license server
    (``ip39.ccs.usherbrooke.ca``).
 
 #. CMC Microsystem will activate your license after a few hours, or a few days

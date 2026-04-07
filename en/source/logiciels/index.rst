@@ -1,7 +1,7 @@
 Software
 ========
 
-When you connect to the IQ HPC Platform, your environment contains only minimal
+When you connect to the IQ Cluster, your environment contains only minimal
 software. You can add more from a vast selection of `available software
 <https://docs.alliancecan.ca/wiki/Available_software/en>`_. Pre-installed and
 optimised for HPC, these packages are the same ones that are available on the
@@ -131,9 +131,9 @@ Software environment version
 ----------------------------
 
 The Alliance team in charge of software periodically releases new versions of
-the environment, such as ``StdEnv/2023`` or ``StdEnv/2020``. On the IQ HPC
-Platform, ``StdEnv/2023`` is the environment initially loaded when you connect.
-The other environments are available and can be loaded. For instance:
+the environment, such as ``StdEnv/2023`` or ``StdEnv/2020``. On the IQ Cluster,
+``StdEnv/2023`` is the environment initially loaded when you connect. The other
+environments are available and can be loaded. For instance:
 
 .. code-block:: console
 
@@ -154,12 +154,12 @@ The other environments are available and can be loaded. For instance:
 Optimisation target
 -------------------
 
-Alliance software available on the IQ HPC Platform is optimised for x86
-processors that support the AVX2 instruction set. It was not compiled to use
-more recent instruction sets such as AVX512. This is the best choice to support
-both the Intel and AMD CPUs on the compute nodes while ensuring good
-performance. If you compile your code with GCC, the corresponding optimisation
-option is ``-march=core-avx2``. With Intel compilers, use ``-xCORE-AVX2``.
+Alliance software available on the IQ Cluster is optimised for x86 processors
+that support the AVX2 instruction set. It was not compiled to use more recent
+instruction sets such as AVX512. This is the best choice to support both the
+Intel and AMD CPUs on the compute nodes while ensuring good performance. If you
+compile your code with GCC, the corresponding optimisation option is
+``-march=core-avx2``. With Intel compilers, use ``-xCORE-AVX2``.
 
 We do not recommend to use a different architecture (e.g. ``module load
 arch/avx512``) or to compile your code with a different option (e.g.
@@ -170,7 +170,7 @@ BLAS/LAPACK libraries
 
 The Alliance software offers several implementations of the `BLAS and LAPACK
 <https://docs.alliancecan.ca/wiki/BLAS_and_LAPACK/en>`_ libraries for linear
-algebra. Intel MKL is used by default on the IQ HPC Platform and most Alliance
+algebra. Intel MKL is used by default on the IQ Cluster and most Alliance
 clusters.
 
 Software guides
@@ -178,7 +178,7 @@ Software guides
 
 The following pages detail the use of specific software packages. Some are also
 available on the national clusters, in which case the focus is on the
-specificities of using that software on the IQ HPC Platform.
+specificities of using that software on the IQ Cluster.
 
 .. toctree::
    :maxdepth: 1

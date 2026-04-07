@@ -52,6 +52,6 @@ To use Mathematica in an interactive job:
 Graphics
 ----------
 
-Mathematica cannot be used in graphics mode on the IQ HPC Platform. Jobs must be
-done in text mode, either with scripts (``wolframscript``) or interactively
+Mathematica cannot be used in graphics mode on the IQ Cluster. Jobs must be done
+in text mode, either with scripts (``wolframscript``) or interactively
 (``wolfram``).

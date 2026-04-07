@@ -1,7 +1,7 @@
 Mailing list
 ============
 
-Important news about the IQ-HPC platform are announced on our mailing list,
+Important news about the IQ Cluster are announced on our mailing list,
 ccs-nouvelles-iq@listes.usherbrooke.ca. For example:
 
 - New features

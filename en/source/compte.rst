@@ -1,7 +1,7 @@
 Account
 =======
 
-To get access to the IQ HPC Platform:
+To get access to the IQ Cluster:
 
 1. Create a `CCDB <https://ccdb.alliancecan.ca/>`_ account.
 2. Activate multifactor authentification in CCDB.
@@ -20,7 +20,7 @@ You need this information to identify your sponsor when you register.
 Multifactor authentification
 ----------------------------
 
-Multifactor authentication is mandatory on the IQ HPC Platform and all Alliance
+Multifactor authentication is mandatory on the IQ Cluster and all Alliance
 clusters. Once your CCDB account has been activated, you must add a second
 authentication factor before you can connect to the clusters.
 
@@ -37,7 +37,7 @@ authentication factor before you can connect to the clusters.
     -------------------------------
 
     If you cannot create a CCDB account (no sponsor can give you access), you can
-    get a restricted IQ HPC account instead. To do so, write to our :doc:`technical
+    get a restricted IQ Cluster account instead. To do so, write to our :doc:`technical
     support <aide/support>`, including the following information:
 
     - Full name
@@ -45,4 +45,4 @@ authentication factor before you can connect to the clusters.
     - Public SSH key (optional)
 
     We will create your account with a temporary password that you must change when
-    you connect to the platform for the first time.
+    you connect to the cluster for the first time.

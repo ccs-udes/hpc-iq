@@ -3,8 +3,8 @@ Lancer des tâches
 
 .. note::
 
-   Cette page couvre les spécificités de la plateforme CHP-IQ. Si vous n’êtes
-   pas familier avec les commandes pour lancer et gérer des tâches (telles que
+   Cette page couvre les spécificités de la Grappe IQ. Si vous n’êtes pas
+   familier avec les commandes pour lancer et gérer des tâches (telles que
    ``sbatch``, ``salloc``, ``squeue``), lisez d’abord `Exécuter des tâches
    <https://docs.alliancecan.ca/wiki/Running_jobs/fr>`_ dans la documentation de
    l’Alliance.
@@ -43,17 +43,16 @@ script de tâche :
 
     ...
 
-La Plateforme offre trois nœuds de calcul avec 96 cœurs CPU et 500G de mémoire
+La Grappe IQ offre trois nœuds de calcul avec 96 cœurs CPU et 500G de mémoire
 chacun. La durée maximale des tâches est de sept jours. Référez-vous au tableau
 des :ref:`nœuds de calcul publics <public-label>` pour plus de détails.
 
 Tâches GPU
 ''''''''''
 
-La Plateforme offre aussi un nœud de calcul avec deux GPU Nvidia A40, qui
-peuvent être demandés à l’aide des options ``--gpus-per-node``,
-``--gpus-per-task`` et ``--gres``. Ce même nœud a 48 cœurs CPU et 500G de
-mémoire.
+La Grappe IQ offre aussi un nœud de calcul avec deux GPU Nvidia A40, qui peuvent
+être demandés à l’aide des options ``--gpus-per-node``, ``--gpus-per-task`` et
+``--gres``. Ce même nœud a 48 cœurs CPU et 500G de mémoire.
 
 Par exemple, pour utiliser un GPU dans une tâche interactive :
 

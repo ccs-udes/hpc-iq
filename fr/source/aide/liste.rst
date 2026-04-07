@@ -1,8 +1,8 @@
 Liste de diffusion
 ==================
 
-Les nouvelles importantes liées à la plateforme CHP-IQ sont annoncée sur notre
-liste de diffusion, ccs-nouvelles-iq@listes.usherbrooke.ca. Par exemple :
+Les nouvelles importantes liées à la Grappe IQ sont annoncée sur notre liste de
+diffusion, ccs-nouvelles-iq@listes.usherbrooke.ca. Par exemple :
 
 - Nouvelles fonctionnalités
 - Pannes, maintenance planifiée et réductions de service

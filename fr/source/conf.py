@@ -16,7 +16,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Plateforme CHP-IQ'
+project = 'Grappe IQ'
 copyright = '2022-2026, CCS'
 author = 'CCS'
 

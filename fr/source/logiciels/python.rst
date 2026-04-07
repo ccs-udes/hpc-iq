@@ -202,7 +202,7 @@ alloués à la tâche. Le module ``multiprocessing``, en particulier, lance par
 défaut autant de fils d’exécution qu’il y a de cœurs CPU, sans considérer si les
 cœurs sont tous accessibles. Par exemple, ``multiprocessing`` lancera par défaut
 64 fils d’exécution si vous l’utilisez dans une tâche sur un nœud CPU de la
-plateforme CHP-IQ, même si n’avez demandé que 2, 4 ou 8 cœurs.
+Grappe IQ, même si n’avez demandé que 2, 4 ou 8 cœurs.
 
 Ce problème est aggravé si l’on utilise aussi une fonction parallélisée qui
 lance par défaut fils qu’il y a de cœurs (telle que
