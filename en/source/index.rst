@@ -25,7 +25,7 @@ Innovation (CFI) grant.
 
 The IQ Cluster is configured similarly to the national clusters managed by the
 Digital Research Alliance of Canada (formerly Compute Canada): Linux
-environment, available software, task submission and management commands, etc.
+environment, available software, job submission and management commands, etc.
 The `Alliance Technical Documentation
 <https://docs.alliancecan.ca/wiki/Technical_documentation/en>`_ therefore also
 applies to the IQ Cluster, and moving a calculation from one cluster to another
