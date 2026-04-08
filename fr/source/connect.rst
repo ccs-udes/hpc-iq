@@ -65,10 +65,11 @@ Finalement, vous obtiendrez un message indiquant que la connexion a été
     Last login: Wed Apr  9 10:45:16 2025 from 24.203.57.88
       _____ ____
      |_   _/ __ \   Grappe IQ / IQ Cluster
+       | || |  | |  hpc.iq.ccs.usherbrooke.ca
        | || |  | |
-       | || |  | |  Documentation fr: https://institut-quantique-udes.github.io/fr
-      _| || |__| |                en: https://institut-quantique-udes.github.io/en
-     |_____\___\_\     Support fr/en: olivier.fisette@usherbrooke.ca
+      _| || |__| |  Documentation fr: https://ccs-udes.github.io/hpc-iq/fr
+     |_____\___\_\                en: https://ccs-udes.github.io/hpc-iq/en
+                       Support fr/en: olivier.fisette@usherbrooke.ca
                                       michel.l.barrette@usherbrooke.ca (backup)
 
     [alice@ip09 ~]$

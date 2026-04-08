@@ -6,7 +6,7 @@ Institut Quantique Computing Cluster
    - Researchers in a hurry should at least read this page and the :doc:`summary
      <summary>` before running their first job.
    - Cette documentation est également disponible en `français
-     <https://institut-quantique-udes.github.io/fr/>`_.
+     <https://ccs-udes.github.io/hpc-iq/fr/>`_.
 
 The `Institut quantique (IQ) <https://www.usherbrooke.ca/iq/>`_ Computing
 Cluster is a high-performance computing (HPC) service for IQ researchers and
@@ -37,8 +37,8 @@ projects, see the Alliance `Getting Started
    :caption: Language | Langue
    :hidden:
 
-   English <https://institut-quantique-udes.github.io/en/>
-   Français <https://institut-quantique-udes.github.io/fr/>
+   English <https://https://ccs-udes.github.io/hpc-iq/en/>
+   Français <https://https://ccs-udes.github.io/hpc-iq/fr/>
 
 .. toctree::
    :caption: Documentation

@@ -6,7 +6,7 @@ Grappe de calcul de l’Institut quantique
    - Les chercheurs pressés devraient au miminum lire cette page ainsi que le
      :doc:`résumé <summary>` avant de lancer leur première tâche.
    - This documentation is also available in `English
-     <https://institut-quantique-udes.github.io/en/>`_.
+     <https://ccs-udes.github.io/hpc-iq/en/>`_.
 
 La Grappe de calcul de l’`Institut quantique (IQ)
 <https://www.usherbrooke.ca/iq/>`_ est un service de calcul haute performance
@@ -38,8 +38,8 @@ démarrage <https://docs.alliancecan.ca/wiki/Getting_started/fr>`_ de l’Allian
    :caption: Langue | Language
    :hidden:
 
-   English <https://institut-quantique-udes.github.io/en/>
-   Français <https://institut-quantique-udes.github.io/fr/>
+   English <https://ccs-udes.github.io/hpc-iq/en/>
+   Français <https://ccs-udes.github.io/hpc-iq/fr/>
 
 .. toctree::
    :caption: Documentation
