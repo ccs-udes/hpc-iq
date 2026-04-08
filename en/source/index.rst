@@ -37,8 +37,8 @@ projects, see the Alliance `Getting Started
    :caption: Language | Langue
    :hidden:
 
-   English <https://https://ccs-udes.github.io/hpc-iq/en/>
-   Français <https://https://ccs-udes.github.io/hpc-iq/fr/>
+   English <https://ccs-udes.github.io/hpc-iq/en/>
+   Français <https://ccs-udes.github.io/hpc-iq/fr/>
 
 .. toctree::
    :caption: Documentation
