@@ -19,9 +19,9 @@
 
        (3 total)
      - 72
-     - 465G
+     - 570G
 
-       (0.45T)
+       (0.56T)
      - Neoverse V2 ARMv9
 
        ``grace``
@@ -36,9 +36,9 @@
        ``gh-preempt``
      - ``gh1306``
      - 144
-     - 934G
+     - 1238G
 
-       (0.91T)
+       (1.21T)
      - 2 x Neoverse V2 ARMv9
 
        ``grace``
@@ -53,9 +53,9 @@
        ``gh-preempt``
      - ``gh1307``
      - 72
-     - 465G
+     - 616G
 
-       (0.45T)
+       (0.60T)
      - 1 x Neoverse V2 ARMv9
 
        ``grace``
@@ -70,9 +70,9 @@
        ``gh-preempt``
      - ``gh1305``
      - 72
-     - 465G
+     - 616G
 
-       (0.45T)
+       (0.60T)
      - 1 x Neoverse V2 ARMv9
 
        ``grace``
