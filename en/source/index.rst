@@ -8,7 +8,7 @@ Institut Quantique Computing Cluster
    - Cette documentation est également disponible en `français
      <https://ccs-udes.github.io/hpc-iq/fr/>`_.
 
-The `Institut quantique (IQ) <https://www.usherbrooke.ca/iq/>`_ Computing
+The `Institut quantique (IQ) <https://www.usherbrooke.ca/iq/en/>`_ Computing
 Cluster is a high-performance computing (HPC) service for IQ researchers and
 their collaborators, managed by the `Centre de calcul scientifique
 <https://www.ccs.usherbrooke.ca/>`_ (CCS) at the `Université de Sherbrooke
