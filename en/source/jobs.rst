@@ -6,7 +6,7 @@ Running jobs
    This page covers the specifics of the IQ Cluster. If you are not familiar
    with job submission and management commands (such as ``sbatch``, ``salloc``,
    ``squeue``), read `Running jobs
-   <https://docs.alliancecan.ca/wiki/Running_jobs/fr>`_ from the Alliance
+   <https://docs.alliancecan.ca/wiki/Running_jobs/en>`_ from the Alliance
    technical documentation first.
 
 Login nodes
