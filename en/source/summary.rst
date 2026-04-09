@@ -2,7 +2,8 @@ Summary
 =======
 
 **Account**
-    Use your `CCDB <https://ccdb.alliancecan.ca/>`_ username and password.
+    Use your `CCDB <https://ccdb.alliancecan.ca/>`_ username, password, and MFA
+    devices.
 
 **Address**
     SSH: ``hpc.iq.ccs.usherbrooke.ca``
@@ -21,6 +22,9 @@ Summary
 
 **Public compute nodes**
     .. include:: nodes/public.rst
+
+**Available resources**
+    ``susage --legend``
 
 **MP2 access**
     MP2 ``/project`` and ``/scratch`` storage are not accessible.

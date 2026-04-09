@@ -2,8 +2,8 @@ Résumé
 ======
 
 **Compte**
-    Utilisez votre nom d’utilisateur et votre mot de passe `CCDB
-    <https://ccdb.alliancecan.ca/>`_.
+    Utilisez votre nom d’utilisateur, votre mot de passe et vos appareils MFA de
+    `CCDB <https://ccdb.alliancecan.ca/>`_.
 
 **Adresse**
     SSH: ``hpc.iq.ccs.usherbrooke.ca``
@@ -23,6 +23,9 @@ Résumé
 
 **Nœuds de calcul publics**
     .. include:: nodes/public.rst
+
+**Ressources disponibles**
+    ``susage --legend``
 
 **Accès à MP2**
     Les stockages ``/project`` et ``/scratch`` de MP2 ne sont pas accessibles.
