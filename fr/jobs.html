@@ -1,0 +1,607 @@
+<!doctype html>
+<html class="no-js" lang="fr" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Recherche" href="search.html"><link rel="next" title="Nœuds de calcul" href="nodes.html"><link rel="prev" title="QuSpin" href="software/quspin.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Lancer des tâches - Grappe IQ</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --font-stack: Lato, sans-serif;
+  --font-stack--headings: Lato, sans-serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Grappe IQ</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <span class="sidebar-brand-text">Grappe IQ</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Recherche" name="q" aria-label="Recherche">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Langue | Language</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/en/">English</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/fr/">Français</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="account.html">Compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect.html">Connexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="software/index.html">Logiciels</a><input aria-label="Toggle navigation of Logiciels" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="software/ansys.html">Ansys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/mathematica.html">Mathematica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/pyqcm.html">Pyqcm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/qiskit.html">Qiskit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/quimb.html">QUIMB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/quspin.html">QuSpin</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Lancer des tâches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes.html">Nœuds de calcul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Résumé</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help/faq.html">Foire aux questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help/list.html">Liste de diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help/support.html">Soutien technique</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Liens externes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.physique.usherbrooke.ca/quantique-udes">Logiciels développés à l’IQ</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.alliancecan.ca/wiki/Technical_documentation/fr">Documentation technique de l’Alliance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.calculquebec.ca/services-aux-chercheurs/formation/">Formations de Calcul Québec</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccdb.alliancecan.ca/">Portail CCDB</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/jobs.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="lancer-des-taches">
+<h1>Lancer des tâches<a class="headerlink" href="#lancer-des-taches" title="Lien vers cette rubrique">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cette page couvre les spécificités de la Grappe IQ. Si vous n’êtes pas
+familier avec les commandes pour lancer et gérer des tâches (telles que
+<code class="docutils literal notranslate"><span class="pre">sbatch</span></code>, <code class="docutils literal notranslate"><span class="pre">salloc</span></code>, <code class="docutils literal notranslate"><span class="pre">squeue</span></code>), lisez d’abord <a class="reference external" href="https://docs.alliancecan.ca/wiki/Running_jobs/fr">Exécuter des tâches</a> dans la documentation de
+l’Alliance.</p>
+</div>
+<section id="noeuds-de-connexion">
+<h2>Nœuds de connexion<a class="headerlink" href="#noeuds-de-connexion" title="Lien vers cette rubrique">¶</a></h2>
+<p>Utilisez le nœud de connexion (<code class="docutils literal notranslate"><span class="pre">ip09</span></code>) pour préparer vos tâches. Il est
+toutefois interdit d’exécuter des tâches directement sur ce nœud ! Les nœuds de
+connexion des grappes ne disposent pas de la puissance de calcul nécessaire pour
+exécuter des tâches. De plus, exécuter une tâche sur un nœud de connexion peut
+le ralentir considérablement, ce qui nuit à tous les chercheurs connectés.
+Toutes les tâches doivent être soumises à l’ordonnanceur en utilisant les
+commandes appropriées : <code class="docutils literal notranslate"><span class="pre">sbatch</span></code>, <code class="docutils literal notranslate"><span class="pre">salloc</span></code>, <code class="docutils literal notranslate"><span class="pre">srun</span></code>.</p>
+</section>
+<section id="lecture-ecriture">
+<h2>Lecture-écriture<a class="headerlink" href="#lecture-ecriture" title="Lien vers cette rubrique">¶</a></h2>
+<p>Utilisez le stockage dans <code class="docutils literal notranslate"><span class="pre">/net/nfs-iq/data</span></code> pour lire et écrire des données
+de recherche dans vos tâches. Cet emplacement offre une bien meilleure
+performance que votre répertoire personnel.</p>
+</section>
+<section id="noeuds-publics">
+<h2>Nœuds publics<a class="headerlink" href="#noeuds-publics" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les tâches doivent être soumises à la partition <code class="docutils literal notranslate"><span class="pre">iq-main</span></code>, ce qui est l’option
+par défaut. La partition peut néanmoins être indiquée explicitement si désiré
+avec l’option <code class="docutils literal notranslate"><span class="pre">--partition</span></code> ou sa forme courte <code class="docutils literal notranslate"><span class="pre">-p</span></code>. Par exemple, dans un
+script de tâche :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#SBATCH --job-name=my-job</span>
+<span class="c1">#SBATCH --partition=iq-main</span>
+
+...
+</pre></div>
+</div>
+<p>La Grappe IQ offre trois nœuds de calcul avec 96 cœurs CPU et 500G de mémoire
+chacun. La durée maximale des tâches est de sept jours. Référez-vous au tableau
+des <a class="reference internal" href="nodes.html#public-label"><span class="std std-ref">nœuds de calcul publics</span></a> pour plus de détails.</p>
+<section id="taches-gpu">
+<h3>Tâches GPU<a class="headerlink" href="#taches-gpu" title="Lien vers cette rubrique">¶</a></h3>
+<p>La Grappe IQ offre aussi un nœud de calcul avec deux GPU Nvidia A40, qui peuvent
+être demandés à l’aide des options <code class="docutils literal notranslate"><span class="pre">--gpus-per-node</span></code>, <code class="docutils literal notranslate"><span class="pre">--gpus-per-task</span></code> et
+<code class="docutils literal notranslate"><span class="pre">--gres</span></code>. Ce même nœud a 48 cœurs CPU et 500G de mémoire.</p>
+<p>Par exemple, pour utiliser un GPU dans une tâche interactive :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span>salloc<span class="w"> </span>--gres<span class="o">=</span>gpu
+</pre></div>
+</div>
+<p>Pour utiliser les deux GPU dans un script de tâche :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#SBATCH --job-name=my-job</span>
+<span class="c1">#SBATCH --partition=iq-main</span>
+<span class="c1">#SBATCH --gpus-per-node=nvidia_a40:2</span>
+
+...
+</pre></div>
+</div>
+</section>
+</section>
+<section id="noeuds-contribues">
+<h2>Nœuds contribués<a class="headerlink" href="#noeuds-contribues" title="Lien vers cette rubrique">¶</a></h2>
+<p>Pour lancer une tâche sur un ou plusieurs nœuds contribués auxquels vous avez
+accès, demandez la partition correspondante avec <code class="docutils literal notranslate"><span class="pre">-p</span></code> <code class="docutils literal notranslate"><span class="pre">--partition</span></code>.
+Référez-vous au tableau des <a class="reference internal" href="nodes.html#contrib-label"><span class="std std-ref">nœuds de calcul contribués</span></a>.
+La durée maximale des tâches varie selon la partition.</p>
+<p>Pour utiliser à la fois les nœuds publics et un ou plusieurs nœuds contribués,
+listez les partitions correspondantes, séparées par des virgules. Par exemple :
+<code class="docutils literal notranslate"><span class="pre">--partition=iq-main,iq-alice</span></code>. Les nœuds publics seront utilisés
+préférentiellement. L’ordre des partitions n’a aucun effet.</p>
+<section id="acces-partage">
+<h3>Accès partagé<a class="headerlink" href="#acces-partage" title="Lien vers cette rubrique">¶</a></h3>
+<p>Certains nœuds contribués sont partagés via la partition <code class="docutils literal notranslate"><span class="pre">iq-preempt</span></code>. Si
+votre groupe de recherche contribue un nœud de calcul, vous avez accès à cette
+partition. Toutefois, les tâches en cours sont annulées automatiquement si le
+propriétaire d’un nœud où elles s’exécutent en a besoin pour ses propres tâches.
+Le propriétaire dispose ainsi d’un « droit de préemption ».</p>
+<p>Les tâches annulées reçoivent un signal <code class="docutils literal notranslate"><span class="pre">SIGTERM</span></code> et disposent d’une minute de
+grâce pour sauvegarder leurs résultats partiels. Une tâche ainsi annulée peut
+demander à être remise dans la file d’attente avec l’option <code class="docutils literal notranslate"><span class="pre">--requeue</span></code>.</p>
+<p>La partition <code class="docutils literal notranslate"><span class="pre">iq-preempt</span></code> est utile pour les lots de courtes tâches et pour
+les tâches qui utilisent des logiciels capables d’écrire des points de contrôle
+afin de reprendre un calcul interrompu.</p>
+<p>Pour utiliser à la fois les nœuds publics et les nœuds partagés, utilisez
+<code class="docutils literal notranslate"><span class="pre">--partition=iq-main,iq-preempt</span></code>. Les nœuds publics seront utilisés
+préférentiellement. Pour utiliser à la fois les nœuds publics, les nœuds
+partagés et un ou plusieurs nœuds contribués, utilisez e.g.
+<code class="docutils literal notranslate"><span class="pre">--partition=iq-main,iq-alice,iq-preempt</span></code>. Pour exclure un nœud particulier,
+tel que le vôtre pour le réserver à d’autres tâches, ajoutez e.g.
+<code class="docutils literal notranslate"><span class="pre">--exclude=cp3799</span></code>.</p>
+</section>
+</section>
+<section id="ressources-disponibles">
+<h2>Ressources disponibles<a class="headerlink" href="#ressources-disponibles" title="Lien vers cette rubrique">¶</a></h2>
+<p>La commande <code class="docutils literal notranslate"><span class="pre">susage</span></code> affiche les ressources allouées ou disponibles dans une
+ou plusieurs partitions. Utilisée sans option ni argument, elle affiche les
+ressources allouées dans les partitions auxquelles vous avez accès :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span>susage
+<span class="go">iq-main:  nodes: (2+1)/4 cpus: 104/336 mem: 1.0T/2.0T gpus: 0/2</span>
+<span class="go">          ██████▓▓▓░░░░░ ████░░░░░░░░░ ███████░░░░░░░ ░░░░░░░░░</span>
+<span class="go">iq-alice:                cpus: 192/192 mem: 612G/2.2T</span>
+<span class="go">                         █████████████ ████░░░░░░░░░░</span>
+</pre></div>
+</div>
+<p>À titre d’exemple, pour afficher les ressources disponibles, avec une légende,
+dans la partition <code class="docutils literal notranslate"><span class="pre">iq-main</span></code> seulement :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span>susage<span class="w"> </span>--available<span class="w"> </span>--legend<span class="w"> </span>iq-main
+<span class="go">iq-main: nodes: (1+1)/4 cpus: 232/336 mem: 1.0T/2.0T gpus: 2/2</span>
+<span class="go">         ███▓▓▓░░░░░░░░ █████████░░░░ ███████░░░░░░░ █████████</span>
+
+<span class="go">Resources are reported as available/total. For nodes, (idle+mixed) are</span>
+<span class="go">reported. Mixed nodes are those with both allocated and idle CPUs. █ indicates</span>
+<span class="go">available resources, ░ allocated resources, and ▓ nodes in the mixed state.</span>
+</pre></div>
+</div>
+</section>
+<section id="gestion-des-taches">
+<h2>Gestion des tâches<a class="headerlink" href="#gestion-des-taches" title="Lien vers cette rubrique">¶</a></h2>
+<p>La commande <code class="docutils literal notranslate"><span class="pre">squeue</span></code> liste toutes les tâches dans l’ordonnanceur, incluant les
+tâches de tous les utilisateurs. Utilisez <code class="docutils literal notranslate"><span class="pre">sq</span></code> pour lister uniquement vos
+tâches. (Cette dernière commande est aussi disponible sur les grappes de
+l’Alliance.)</p>
+<section id="suivre-les-taches-actives">
+<span id="taches-actives-label"></span><h3>Suivre les tâches actives<a class="headerlink" href="#suivre-les-taches-actives" title="Lien vers cette rubrique">¶</a></h3>
+<p>Lorsqu’une de vos tâches démarre, il est important de vérifier qu’elle utilise
+adéquatement les ressources qui lui ont été assignées. Par exemple, si une tâche
+a accès à 4 cœurs CPU et 80G de mémoire, utilise-t-elle vraiment ces 4 cœurs à
+100% et sa consommation de mémoire est-elle dans cet ordre de grandeur ?</p>
+<p>Pour le vérifier, connectez-vous avec <code class="docutils literal notranslate"><span class="pre">ssh</span></code> à un nœud de calcul assigné à
+votre tâche et exécutez la commande <code class="docutils literal notranslate"><span class="pre">htop</span></code>, qui donne un aperçu de la
+consommation de CPU et de mémoire. Dans l’exemple suivant,
+<code class="docutils literal notranslate"><span class="pre">alice</span></code> utilise la sortie de <code class="docutils literal notranslate"><span class="pre">sq</span></code> pour identifier le nœud <code class="docutils literal notranslate"><span class="pre">cp1433</span></code> avant
+de s’y connecter. <code class="docutils literal notranslate"><span class="pre">htop</span></code> montre 4 processus à 100% CPU appartenant à Alice, ce
+qui correspond aux 4 CPU assignés à sa tâche.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span>sq
+<span class="go">          JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS       GRES MIN_MEM NODELIST (REASON)</span>
+<span class="go">        5623630 alice    def-alice         md-job.sh   R      14:56     1    4     (null)      1G cp1433 (None)</span>
+<span class="gp">[alice@ip09 ~]$ </span>ssh<span class="w"> </span>cp1433
+<span class="go">Last login: Wed Aug 21 11:16:34 2024 from ip09.m</span>
+<span class="gp">[alice@cp1433-mp2 ~]$ </span>htop
+
+<span class="go">    0[||||||||100.0%]    8[          0.0%]    16[          0.0%]   24[          0.0%]</span>
+<span class="go">    1[||||||||100.0%]    9[          0.0%]    17[|         0.7%]   25[          0.0%]</span>
+<span class="go">    2[||||||||100.0%]   10[          0.0%]    18[          0.0%]   26[          0.0%]</span>
+<span class="go">    3[||||||||100.0%]   11[          0.0%]    19[          0.0%]   27[          0.0%]</span>
+<span class="go">    4[          0.0%]   12[          0.0%]    20[          0.0%]   28[          0.0%]</span>
+<span class="go">    5[          0.0%]   13[          0.0%]    21[          0.0%]   29[          0.0%]</span>
+<span class="go">    6[          0.0%]   14[          0.0%]    22[          0.0%]   30[          0.0%]</span>
+<span class="go">    7[          0.0%]   15[          0.0%]    23[|         0.7%]   31[          0.0%]</span>
+<span class="go">  Mem[|||                      6.82G/252G]   Tasks: 63, 174 thr; 5 running</span>
+<span class="go">  Swp[                              0K/0K]   Load average: 2.40 0.71 1.22</span>
+<span class="go">                                          Uptime: 1 day, 20:53:58</span>
+
+<span class="go">   PID USER      PRI  NI  VIRT   RES   SHR S CPU%▽MEM%   TIME+  Command</span>
+<span class="go"> 35160 alice      20   0  457M 97680 19588 R  99.  0.0  0:51.67 /cvmfs/soft.computecanada.</span>
+<span class="go"> 35161 alice      20   0  454M 96376 19248 R  99.  0.0  0:51.93 /cvmfs/soft.computecanada.</span>
+<span class="go"> 35162 alice      20   0  454M 95832 19248 R  99.  0.0  0:51.83 /cvmfs/soft.computecanada.</span>
+<span class="go"> 35163 alice      20   0  446M 93644 19252 R 99.3  0.0  0:51.82 /cvmfs/soft.computecanada.</span>
+<span class="go"> 35449 alice      20   0 58960  4812  3044 R  0.7  0.0  0:00.08 htop</span>
+<span class="go">     1 root       20   0  122M  4116  2636 S  0.0  0.0  0:47.60 /usr/lib/systemd/systemd -</span>
+<span class="go">  1041 root       20   0 39060  8500  8172 S  0.0  0.0  0:01.65 /usr/lib/systemd/systemd-j</span>
+<span class="go">  1074 root       20   0 45472  1840  1352 S  0.0  0.0  0:11.67 /usr/lib/systemd/systemd-u</span>
+<span class="go">  1318 root       20   0 48920  1328  1012 S  0.0  0.0  0:00.00 /usr/sbin/rdma-ndd --syste</span>
+<span class="go">  1393 root       16  -4 55532   860   456 S  0.0  0.0  0:00.37 /sbin/auditd</span>
+<span class="go">  1394 root       16  -4 55532   860   456 S  0.0  0.0  0:00.00 /sbin/auditd</span>
+<span class="go">  1395 root       12  -8 84556   888   740 S  0.0  0.0  0:00.39 /sbin/audispd</span>
+<span class="go">F1Help  F2Setup F3SearchF4FilterF5Tree  F6SortByF7Nice -F8Nice +F9Kill  F10Quit</span>
+</pre></div>
+</div>
+<section id="id1">
+<h4>Tâches GPU<a class="headerlink" href="#id1" title="Lien vers cette rubrique">¶</a></h4>
+<p>Pour les tâches GPU, il importe également de vérifier qu’elles utilisent
+adéquatement le ou les GPU qui lui ont été alloués. Pour ce faire,
+connectez-vous au nœud de calcul et utilisez la commande <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code>, qui
+liste les GPU et les programmes qui les utilisent. Par exemple :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span>ssh<span class="w"> </span>cp3705
+<span class="go">Last login: Wed Aug 21 13:47:44 2024 from ip09.m</span>
+<span class="gp">[alice@cp3705-mp2 ~]$ </span>nvidia-smi
+<span class="go">Wed Aug 21 13:52:41 2024</span>
+<span class="go">+-----------------------------------------------------------------------------------------+</span>
+<span class="go">| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |</span>
+<span class="go">|-----------------------------------------+------------------------+----------------------+</span>
+<span class="go">| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |</span>
+<span class="go">| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |</span>
+<span class="go">|                                         |                        |               MIG M. |</span>
+<span class="go">|=========================================+========================+======================|</span>
+<span class="go">|   0  NVIDIA A40                     Off |   00000000:65:00.0 Off |                    0 |</span>
+<span class="go">|  0%   30C    P0             81W /  300W |     370MiB /  46068MiB |      0%      Default |</span>
+<span class="go">|                                         |                        |                  N/A |</span>
+<span class="go">+-----------------------------------------+------------------------+----------------------+</span>
+<span class="go">|   1  NVIDIA A40                     Off |   00000000:CA:00.0 Off |                    0 |</span>
+<span class="go">|  0%   29C    P0             70W /  300W |     276MiB /  46068MiB |      0%      Default |</span>
+<span class="go">|                                         |                        |                  N/A |</span>
+<span class="go">+-----------------------------------------+------------------------+----------------------+</span>
+
+<span class="go">+-----------------------------------------------------------------------------------------+</span>
+<span class="go">| Processes:                                                                              |</span>
+<span class="go">|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |</span>
+<span class="go">|        ID   ID                                                               Usage      |</span>
+<span class="go">|=========================================================================================|</span>
+<span class="go">|    0   N/A  N/A     14734      C   gmx_mpi                                       362MiB |</span>
+<span class="go">|    1   N/A  N/A     14734      C   gmx_mpi                                       268MiB |</span>
+<span class="go">+-----------------------------------------------------------------------------------------+</span>
+</pre></div>
+</div>
+<p>On remarque que le processus <code class="docutils literal notranslate"><span class="pre">gmx_mpi</span></code> (id 14734) utilise les deux GPU.</p>
+</section>
+</section>
+<section id="statistiques-des-taches-terminees">
+<h3>Statistiques des tâches terminées<a class="headerlink" href="#statistiques-des-taches-terminees" title="Lien vers cette rubrique">¶</a></h3>
+<p>La commande <code class="docutils literal notranslate"><span class="pre">seff</span></code> affiche des statistiques pour les tâches terminées,
+incluant leur efficacité en CPU et en mémoire. Par exemple :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip15-mp2 ~]$ </span>seff<span class="w"> </span><span class="m">5623631</span>
+<span class="go">Job ID: 5623631</span>
+<span class="go">Cluster: mp2</span>
+<span class="go">User/Group: alice/alice</span>
+<span class="go">State: COMPLETED (exit code 0)</span>
+<span class="go">Nodes: 1</span>
+<span class="go">Cores per node: 4</span>
+<span class="go">CPU Utilized: 01:00:09</span>
+<span class="go">CPU Efficiency: 99.59% of 01:00:24 core-walltime</span>
+<span class="go">Job Wall-clock time: 00:15:06</span>
+<span class="go">Memory Utilized: 353.91 MB (estimated maximum)</span>
+<span class="go">Memory Efficiency: 8.64% of 4.00 GB (1.00 GB/core)</span>
+</pre></div>
+</div>
+<p>Typiquement, l’efficacité en CPU devrait être proche de 100%. Une efficacité
+plus basse indique que du temps CPU est perdu, possiblement parce que la tâche
+n’utilise pas toutes les ressources allouées. Si l’efficacité d’une de vos
+tâches est sous 70%, vous ne devriez pas soumettre d’autres tâches similaires
+avant de régler ce problème.</p>
+<p>L’efficacité en mémoire, pour sa part, devrait être d’au moins 50%. Si une de
+vos tâches est sous ce seuil, réduisez la quantité de mémoire demandée pour les
+tâches similaires. (Si vous demandez la quantité de mémoire par défaut, 1G par
+cœur, ignorez l’efficacité mémoire puisque votre consommation absolue est de
+toute façon très basse.)</p>
+<p>En surveillant l’efficacité de vos tâches, vous ne vous assurez pas seulement
+qu’elles soient plus rapides : vous permettez aussi à un plus grand
+nombre de tâches d’être exécutées simultanément, ce qui réduit le temps
+d’attente pour tous les chercheurs.</p>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="nodes.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Nœuds de calcul</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="software/quspin.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">QuSpin</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022-2026, CCS
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Lancer des tâches</a><ul>
+<li><a class="reference internal" href="#noeuds-de-connexion">Nœuds de connexion</a></li>
+<li><a class="reference internal" href="#lecture-ecriture">Lecture-écriture</a></li>
+<li><a class="reference internal" href="#noeuds-publics">Nœuds publics</a><ul>
+<li><a class="reference internal" href="#taches-gpu">Tâches GPU</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#noeuds-contribues">Nœuds contribués</a><ul>
+<li><a class="reference internal" href="#acces-partage">Accès partagé</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ressources-disponibles">Ressources disponibles</a></li>
+<li><a class="reference internal" href="#gestion-des-taches">Gestion des tâches</a><ul>
+<li><a class="reference internal" href="#suivre-les-taches-actives">Suivre les tâches actives</a><ul>
+<li><a class="reference internal" href="#id1">Tâches GPU</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#statistiques-des-taches-terminees">Statistiques des tâches terminées</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    </body>
+</html>

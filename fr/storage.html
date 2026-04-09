@@ -1,0 +1,431 @@
+<!doctype html>
+<html class="no-js" lang="fr" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Recherche" href="search.html"><link rel="next" title="Logiciels" href="software/index.html"><link rel="prev" title="Connexion" href="connect.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Stockage - Grappe IQ</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --font-stack: Lato, sans-serif;
+  --font-stack--headings: Lato, sans-serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Grappe IQ</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <span class="sidebar-brand-text">Grappe IQ</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Recherche" name="q" aria-label="Recherche">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Langue | Language</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/en/">English</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/fr/">Français</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="account.html">Compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect.html">Connexion</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Stockage</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="software/index.html">Logiciels</a><input aria-label="Toggle navigation of Logiciels" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="software/ansys.html">Ansys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/mathematica.html">Mathematica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/pyqcm.html">Pyqcm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/qiskit.html">Qiskit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/quimb.html">QUIMB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/quspin.html">QuSpin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Lancer des tâches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes.html">Nœuds de calcul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Résumé</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help/faq.html">Foire aux questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help/list.html">Liste de diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help/support.html">Soutien technique</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Liens externes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.physique.usherbrooke.ca/quantique-udes">Logiciels développés à l’IQ</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.alliancecan.ca/wiki/Technical_documentation/fr">Documentation technique de l’Alliance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.calculquebec.ca/services-aux-chercheurs/formation/">Formations de Calcul Québec</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccdb.alliancecan.ca/">Portail CCDB</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/storage.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="stockage">
+<h1>Stockage<a class="headerlink" href="#stockage" title="Lien vers cette rubrique">¶</a></h1>
+<section id="repertoire-personnel">
+<h2>Répertoire personnel<a class="headerlink" href="#repertoire-personnel" title="Lien vers cette rubrique">¶</a></h2>
+<p>Votre répertoire personnel est accessible à <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>. Par exemple :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$HOME</span>
+<span class="go">/home/alice</span>
+</pre></div>
+</div>
+<p>C’est le bon emplacement pour vos fichiers de configuration, votre code et les
+logiciels que vous installez. Dû à sa capacité et à sa performance limitées, ce
+n’est pas le bon emplacement pour vos données de recherche et vous ne devriez
+pas l’utiliser pour lire et écrire de telles données lorsque vous <a class="reference internal" href="jobs.html"><span class="doc">exécutez
+des tâches</span></a>.</p>
+</section>
+<section id="donnees-de-recherche">
+<h2>Données de recherche<a class="headerlink" href="#donnees-de-recherche" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les données de recherche sont stockées sur un serveur de 190T accessible à
+<code class="docutils literal notranslate"><span class="pre">/net/nfs-iq/data</span></code>. Assurez-vous d’utiliser cet emplacement pour lire et
+écrire des données lorsque vous <a class="reference internal" href="jobs.html"><span class="doc">exécutez des tâches</span></a> ; il offre
+une meilleure performance entrée-sortie (« input/output, IO ») que votre
+répertoire personnel.</p>
+<p>Pour assurer leur sécurité en cas de défaillance d’un disque, les données de
+recherche sont redondantes, c’est-à-dire qu’elles sont stockées en deux
+exemplaires. (La capacité physique totale du serveur est de 384T, environ 2 ×
+190T.) Les données sont également sauvegardées chaque jour et archivées sur
+ruban chaque semaine.</p>
+<section id="donnees-individuelles">
+<h3>Données individuelles<a class="headerlink" href="#donnees-individuelles" title="Lien vers cette rubrique">¶</a></h3>
+<p>Chaque utilisateur dispose d’un espace individuel pour ses données de recherche,
+accessible à <code class="docutils literal notranslate"><span class="pre">/net/nfs-iq/data/$USER</span></code>. Par exemple :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$USER</span>
+<span class="go">alice</span>
+<span class="gp">[alice@ip09 ~]$ </span><span class="nb">cd</span><span class="w"> </span>/net/nfs-iq/data/alice
+</pre></div>
+</div>
+</section>
+<section id="donnees-des-groupes">
+<h3>Données des groupes<a class="headerlink" href="#donnees-des-groupes" title="Lien vers cette rubrique">¶</a></h3>
+<p>Les groupes de recherche disposent d’un espace partagé accessible à
+<code class="docutils literal notranslate"><span class="pre">/net/nfs-iq/data/def-$PROF</span></code>, où <code class="docutils literal notranslate"><span class="pre">$PROF</span></code> est le nom d’utilisateur du
+directeur ou de la directrice du groupe de recherche. (Cette forme est identique
+à celle du stockage projet des grappes de l’Alliance.) Par exemple :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@ip09 ~]$ </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$USER</span>
+<span class="go">alice</span>
+<span class="gp">[alice@ip09 ~]$ </span><span class="nb">cd</span><span class="w"> </span>/net/nfs-iq/data/def-alice
+</pre></div>
+</div>
+</section>
+</section>
+<section id="stockage-local-sur-les-noeuds-de-calcul">
+<h2>Stockage local sur les nœuds de calcul<a class="headerlink" href="#stockage-local-sur-les-noeuds-de-calcul" title="Lien vers cette rubrique">¶</a></h2>
+<p>Quand l’ordonnanceur démarre une tâche, un répertoire temporaire est créé sur
+chacun des nœuds alloués à cette tâche. La variable d’environnement
+<code class="docutils literal notranslate"><span class="pre">SLURM_TMPDIR</span></code> donne le chemin d’accès à ce répertoire. Lorsque la tâche se
+termine, les fichiers du répertoire temporaire sont supprimés.</p>
+<p>Puisque <code class="docutils literal notranslate"><span class="pre">$SLURM_TMPDIR</span></code> se trouve sur un disque local, les opérations
+d’entrée-sortie sont plus rapides qu’avec le stockage réseau (tel que
+<code class="docutils literal notranslate"><span class="pre">/net/nfs-iq/data</span></code>). Si une tâche fait beaucoup d’opérations de lecture et
+d’écriture, elle s’exécutera probablement plus rapidement en utilisant
+<code class="docutils literal notranslate"><span class="pre">$SLURM_TMPDIR</span></code> plutôt que le stockage réseau. Vous devez toutefois vous
+assurer de copier vos données vers le stockage réseau avant que votre tâche ne
+se termine.</p>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.alliancecan.ca/wiki/Using_node-local_storage/fr">Stockage local sur les nœuds de calcul</a>
+(documentation technique de l’Alliance)</p></li>
+</ul>
+</div>
+</section>
+<section id="interconnexion-avec-la-grappe-mp2">
+<h2>Interconnexion avec la grappe MP2<a class="headerlink" href="#interconnexion-avec-la-grappe-mp2" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le stockage pour les données de recherche, <code class="docutils literal notranslate"><span class="pre">/net/nfs-iq/data</span></code>, est
+accessible à partir des nœuds de connexion et de calcul de MP2. Les stockages
+<code class="docutils literal notranslate"><span class="pre">/project</span></code> et <code class="docutils literal notranslate"><span class="pre">/scratch</span></code> de MP2 ne sont pas accessibles à partir de la
+Grappe IQ.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="software/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Logiciels</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="connect.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Connexion</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022-2026, CCS
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Stockage</a><ul>
+<li><a class="reference internal" href="#repertoire-personnel">Répertoire personnel</a></li>
+<li><a class="reference internal" href="#donnees-de-recherche">Données de recherche</a><ul>
+<li><a class="reference internal" href="#donnees-individuelles">Données individuelles</a></li>
+<li><a class="reference internal" href="#donnees-des-groupes">Données des groupes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stockage-local-sur-les-noeuds-de-calcul">Stockage local sur les nœuds de calcul</a></li>
+<li><a class="reference internal" href="#interconnexion-avec-la-grappe-mp2">Interconnexion avec la grappe MP2</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    </body>
+</html>
