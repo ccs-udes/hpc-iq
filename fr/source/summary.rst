@@ -22,7 +22,7 @@ Résumé
     - Données des groupes : ``/net/nfs-iq/data/def-$PARRAIN``
 
 **Nœuds de calcul publics**
-    .. include:: nœuds/public.rst
+    .. include:: nodes/public.rst
 
 **Accès à MP2**
     Les stockages ``/project`` et ``/scratch`` de MP2 ne sont pas accessibles.

@@ -20,7 +20,7 @@ Summary
     - Group data: ``/net/nfs-iq/data/def-$SPONSOR``
 
 **Public compute nodes**
-    .. include:: nœuds/public.rst
+    .. include:: nodes/public.rst
 
 **MP2 access**
     MP2 ``/project`` and ``/scratch`` storage are not accessible.
