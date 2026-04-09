@@ -1,7 +1,7 @@
 Connecting
 ==========
 
-Access the IQ Cluster is through SSH (Secure Shell). The cluster’s address is
+Access to the IQ Cluster is through SSH (Secure Shell). The cluster’s address is
 ``hpc.iq.ccs.usherbrooke.ca``.
 
 Récent operating systems (Linux, MacOS, Windows 11) typically include an SSH
