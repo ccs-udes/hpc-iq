@@ -8,14 +8,14 @@ Institut Quantique Computing Cluster
    - Cette documentation est également disponible en `français
      <https://ccs-udes.github.io/hpc-iq/fr/>`_.
 
-The `Institut quantique (IQ) <https://www.usherbrooke.ca/iq/en/>`_ Computing
+The `Institut quantique <https://www.usherbrooke.ca/iq/en/>`_ (IQ) Computing
 Cluster is a high-performance computing (HPC) service for IQ researchers and
 their collaborators, managed by the `Centre de calcul scientifique
 <https://www.ccs.usherbrooke.ca/>`_ (CCS) at the `Université de Sherbrooke
-<https://www.usherbrooke.ca/>`_. In addition to compute nodes and storage space
-available to all IQ researchers, the cluster hosts contributed hardware from a
-number of research groups, access to which is restricted. There are no usage
-limitations or fees. Costs are assumed through a Canada Foundation for
+<https://www.usherbrooke.ca/>`_ (UdeS). In addition to compute nodes and storage
+space available to all IQ researchers, the cluster hosts contributed hardware
+from a number of research groups, access to which is restricted. There are no
+usage limitations or fees. Costs are assumed through a Canada Foundation for
 Innovation (CFI) grant.
 
 The IQ Cluster is configured similarly to the national clusters managed by the

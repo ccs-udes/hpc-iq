@@ -8,13 +8,13 @@ Grappe de calcul de l’Institut quantique
    - This documentation is also available in `English
      <https://ccs-udes.github.io/hpc-iq/en/>`_.
 
-La Grappe de calcul de l’`Institut quantique (IQ)
-<https://www.usherbrooke.ca/iq/>`_ est un service de calcul haute performance
-(CHP) réservé aux chercheurs de l’IQ et à leurs collaborateurs, géré par le
-`Centre de calcul scientifique <https://www.ccs.usherbrooke.ca/>`_ (CCS) de
-l’`Université de Sherbrooke <https://www.usherbrooke.ca/>`_. En plus de nœuds de
-calcul et d’un espace de stockage disponibles pour tous les chercheurs de l’IQ,
-la grappe contient des nœuds contribués par des chercheurs spécifiques et dont
+La Grappe de calcul de l’`Institut quantique <https://www.usherbrooke.ca/iq/>`_
+(IQ) est un service de calcul haute performance (CHP) réservé aux chercheurs de
+l’IQ et à leurs collaborateurs, géré par le `Centre de calcul scientifique
+<https://www.ccs.usherbrooke.ca/>`_ (CCS) de l’`Université de Sherbrooke
+<https://www.usherbrooke.ca/>`_ (UdeS). En plus de nœuds de calcul et d’un
+espace de stockage disponibles pour tous les chercheurs de l’IQ, la grappe
+contient des nœuds contribués par des chercheurs spécifiques et dont
 l’utilisation est restreinte. Les chercheurs peuvent utiliser la grappe sans
 limite et sans frais. Les coûts sont assumés grâce à une subvention de la
 Fondation canadienne pour l’innovation (FCI).
