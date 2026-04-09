@@ -11,7 +11,7 @@ Grappe de calcul de l’Institut quantique
 La Grappe de calcul de l’`Institut quantique (IQ)
 <https://www.usherbrooke.ca/iq/>`_ est un service de calcul haute performance
 (CHP) réservé aux chercheurs de l’IQ et à leurs collaborateurs, géré par le
-`Centre de calcul scientifique (CCS) <https://www.ccs.usherbrooke.ca/>`_ de
+`Centre de calcul scientifique <https://www.ccs.usherbrooke.ca/>`_ (CCS) de
 l’`Université de Sherbrooke <https://www.usherbrooke.ca/>`_. En plus de nœuds de
 calcul et d’un espace de stockage disponibles pour tous les chercheurs de l’IQ,
 la grappe contient des nœuds contribués par des chercheurs spécifiques et dont
