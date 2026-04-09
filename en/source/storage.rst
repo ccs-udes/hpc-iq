@@ -55,7 +55,7 @@ instance:
     [alice@ip09 ~]$ cd /net/nfs-iq/data/def-alice
 
 Local storage on compute nodes
---------------------------------------
+------------------------------
 
 When the scheduler starts a job, a temporary directory is created on each
 allocated compute node. The ``SLURM_TMPDIR`` environment variable gives the
