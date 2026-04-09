@@ -89,7 +89,7 @@ Accès partagé
 
 Certains nœuds contribués sont partagés via la partition ``iq-preempt``. Si
 votre groupe de recherche contribue un nœud de calcul, vous avez accès à cette
-partition. Toutefois, les tâches soumises sont annulées automatiquement si le
+partition. Toutefois, les tâches en cours sont annulées automatiquement si le
 propriétaire d’un nœud où elles s’exécutent en a besoin pour ses propres tâches.
 Le propriétaire dispose ainsi d’un « droit de préemption ».
 
