@@ -88,10 +88,10 @@ Accès partagé
 '''''''''''''
 
 Certains nœuds contribués sont partagés via la partition ``iq-preempt``. Si
-votre groupe de recherche contribue un nœud de calcul, vous avez accès à cette
-partition. Toutefois, les tâches en cours sont annulées automatiquement si le
-propriétaire d’un nœud où elles s’exécutent en a besoin pour ses propres tâches.
-Le propriétaire dispose ainsi d’un « droit de préemption ».
+votre groupe de recherche partage un de ses nœuds de calcul, vous avez accès à
+cette partition. Toutefois, les tâches en cours sont annulées automatiquement si
+le propriétaire d’un nœud où elles s’exécutent en a besoin pour ses propres
+tâches. Le propriétaire dispose ainsi d’un « droit de préemption ».
 
 Les tâches annulées reçoivent un signal ``SIGTERM`` et disposent d’une minute de
 grâce pour sauvegarder leurs résultats partiels. Une tâche ainsi annulée peut
