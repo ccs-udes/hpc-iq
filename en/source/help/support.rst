@@ -46,17 +46,18 @@ Slack
 
 Send a message to `Olivier Fisette` on one of the following workspaces:
 
+- `CCS`
 - `Calcul-IQ`
 - `AlgoLab Quantique`
 
 Online meetings
 '''''''''''''''
 
-I am available every day on the MS Teams and Google Meet platforms. Contact me
-by email or on Slack to plan a meeting.
+I am available on the MS Teams and Google Meet platforms. Contact me by email or
+on Slack to plan a meeting.
 
 In-person meetings
 ''''''''''''''''''
 
-I am available on the main campus every Monday and, by appointment, on other
-days. Contact me by email or on Slack to plan a meeting.
+I am available on the main campus by appointment. Contact me by email or on
+Slack to plan a meeting.

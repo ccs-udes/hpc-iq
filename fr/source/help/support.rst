@@ -51,19 +51,18 @@ Sur Slack
 
 Envoyez un message à `Olivier Fisette` sur un des espaces de travail suivants :
 
+- `CCS`
 - `Calcul-IQ`
 - `AlgoLab Quantique`
 
 Rencontres en ligne
 '''''''''''''''''''
 
-Je suis disponible tous les jours sur les plateformes MS Teams et Google Meet.
-Contactez-moi par courrier électronique ou sur Slack pour planifier une
-rencontre.
+Je suis disponible sur les plateformes MS Teams et Google Meet. Contactez-moi
+par courrier électronique ou sur Slack pour planifier une rencontre.
 
 Rencontres en personne
 ''''''''''''''''''''''
 
-Je suis disponible sur le campus principal tous les lundis et, sur rendez-vous,
-les autres jours. Contactez-moi par courrier électronique ou sur Slack pour
-planifier une rencontre.
+Je suis disponible sur le campus principal sur rendez-vous. Contactez-moi par
+courrier électronique ou sur Slack pour planifier une rencontre.
