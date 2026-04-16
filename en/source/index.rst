@@ -5,6 +5,8 @@ Institut Quantique Computing Cluster
 
    - Researchers in a hurry should at least read this page and the :doc:`summary
      <summary>` before running their first job.
+   - Grace Hopper compute nodes are managed in a separate `GH Cluster
+     <https://ccs-udes.github.io/hpc-gh/en/>`_.
    - Cette documentation est également disponible en `français
      <https://ccs-udes.github.io/hpc-iq/fr/>`_.
 

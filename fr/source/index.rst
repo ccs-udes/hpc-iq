@@ -5,6 +5,8 @@ Grappe de calcul de l’Institut quantique
 
    - Les chercheurs pressés devraient au miminum lire cette page ainsi que le
      :doc:`résumé <summary>` avant de lancer leur première tâche.
+   - Les nœuds de calcul Grace Hopper sont gérés séparément dans la `Grappe GH
+     <https://ccs-udes.github.io/hpc-gh/fr/>`_.
    - This documentation is also available in `English
      <https://ccs-udes.github.io/hpc-iq/en/>`_.
 
