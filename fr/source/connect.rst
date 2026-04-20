@@ -5,9 +5,9 @@ L’accès à la Grappe IQ se fait par SSH (Secure Shell). L’adresse de la gra
 est ``hpc.iq.ccs.usherbrooke.ca``.
 
 Les systèmes d’exploitation récents (Linux, MacOS, Windows 11) incluent
-habituellement un client SSH. Pour vous connecter à la grappe en mode ligne de
-commande, ouvrez d’abord une fenêtre de terminal (nommé PowerShell dans
-Windows). Dans cette fenêtre, utilisez la commande ``ssh`` pour établir une
+habituellement l’ensemble d’outils OpenSSH. Pour vous connecter à la grappe en
+mode ligne de commande, ouvrez d’abord une fenêtre de terminal (nommé PowerShell
+dans Windows). Dans cette fenêtre, utilisez la commande ``ssh`` pour établir une
 connexion :
 
 .. code-block:: console
