@@ -194,8 +194,8 @@ première fois, vous devrez créer ce fichier.
 Simplifier la commande de connexion
 '''''''''''''''''''''''''''''''''''
 
-Nous recommandons de créer un raccourci avec un nom court afin d’éviter d’avoir
-à taper l’adresse ``hpc.iq.ccs.usherbrooke.ca`` au long à chaque connexion :
+Nous recommandons de créer un raccourci afin d’éviter d’avoir à taper l’adresse
+``hpc.iq.ccs.usherbrooke.ca`` au long à chaque connexion :
 
 .. code-block::
 
