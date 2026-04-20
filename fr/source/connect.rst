@@ -180,8 +180,8 @@ SSH Agent), vous n’aurez à déchiffer votre clé qu’une fois par session.
       demeurerait sécurisé.
 
 .. seealso::
-   - Documentation technique de l’Alliance :
-       - `Clés SSH <https://docs.alliancecan.ca/wiki/SSH_Keys/fr>`_
+    - `Clés SSH <https://docs.alliancecan.ca/wiki/SSH_Keys/fr>`_ (documentation
+      technique de l’Alliance)
 
 Configuration d’OpenSSH
 -----------------------
