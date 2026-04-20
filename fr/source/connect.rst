@@ -223,11 +223,11 @@ avec simplement :
 ''''''''''''''''''''''''''''''''''
 
 L’authentification multifacteur avec Duo demande l’utilisation d’un second
-facteur à chaque connexion. Pour éviter ce désagrément, nous recommandons
+facteur à chaque connexion. Pour éviter cette torture, nous recommandons
 d’activer le multiplexeur OpenSSH. Ainsi, une connexion authentifiée sera
 réutilisée lorsque vous établissez une nouvelle session. Vous n’aurez donc pas à
 utiliser un second facteur Duo ou même à déchiffrer votre clé SSH privée plus
-d’une fois. Pour ce faire, ajoutez les options ``Control...`` suivantes :
+d’une fois. Ajoutez les options ``Control...`` suivantes :
 
 .. code-block::
     :emphasize-lines: 3-5
