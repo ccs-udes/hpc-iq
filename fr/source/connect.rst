@@ -227,7 +227,9 @@ facteur à chaque connexion. Pour éviter cette torture, nous recommandons
 d’activer le multiplexeur OpenSSH. Ainsi, une connexion authentifiée sera
 réutilisée lorsque vous établissez une nouvelle session. Vous n’aurez donc pas à
 utiliser un second facteur Duo ou même à déchiffrer votre clé SSH privée plus
-d’une fois. Ajoutez les options ``Control...`` suivantes :
+d’une fois.
+
+Ajoutez les options ``Control...`` suivantes :
 
 .. code-block::
     :emphasize-lines: 3-5
@@ -244,8 +246,10 @@ d’une fois. Ajoutez les options ``Control...`` suivantes :
 Certains serveurs et réseaux interrompent les connexions SSH inactives après
 quelques minutes. Pour éviter ce désagrément, vous pouvez configurer OpenSSH
 afin d’envoyer périodiquement un signal au serveur indiquant que la connexion
-est toujours active. Pour ce faire, ajoutez l’option ``ServerAliveInterval`` au
-début de votre fichier de configuration, avant la première entrée ``Host`` :
+est toujours active.
+
+Ajoutez l’option ``ServerAliveInterval`` au début de votre fichier de
+configuration, avant la première entrée ``Host`` :
 
 .. code-block::
     :emphasize-lines: 1
