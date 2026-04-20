@@ -104,11 +104,81 @@ les commandes pour SSH.
 Clés SSH
 --------
 
-Vous pouvez utiliser une paire de clés SSH pour vous connecter plutôt que votre
-mot de passe. Cela améliore la sécurité tout en étant plus pratique.
+Il est préférable d’utiliser une paire de clés SSH pour vous connecter plutôt
+que votre mot de passe. Cela améliore la sécurité tout en étant plus pratique.
+Si vous n’avez pas déjà une paire de clés, vous pouvez en générer une dans votre
+terminal sur votre ordinateur avec :
 
-La page `Clés SSH <https://docs.alliancecan.ca/wiki/SSH_Keys/fr>`_ de la
-documentation technique de l’Alliance explique comment générer une paire de clés
-et installer la clé publique sur le serveur. Pour l’installation, suivez les
-instructions de la section `Par le fichier authorized_keys` plutôt que `Via
-CCDB` puisque la Grappe IQ n’utilise pas les clés SSH de votre compte CCDB.
+.. code-block:: console
+
+    $ ssh-keygen
+    Generating public/private ed25519 key pair.
+    Enter file in which to save the key (/home/alice/.ssh/id_ed25519):
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /home/alice/.ssh/id_ed25519.
+    Your public key has been saved in /home/alice/.ssh/id_ed25519.pub.
+    The key fingerprint is:
+    SHA256:GLyOJ2mS7f7d4MPEGu00sa34oSmr7/cTJremUD/G2hI alice@laptop
+    The key's randomart image is:
+    +--[ED25519 256]--+
+    |                 |
+    |     .           |
+    |      o          |
+    |       +.        |
+    |      +oS+       |
+    |   o =Eo@ .      |
+    |  o B o&B=       |
+    |   +.+=OO=       |
+    |  .=*=***o.      |
+    +----[SHA256]-----+
+
+À l’invite, entrez une phrase de passe sécuritaire : au moins 12 caractères,
+incluant des lettres minuscules et majuscules, des chiffres et des caractères
+spéciaux. Cette phrase sera utilisée pour chiffrer votre clé privée.
+
+Une fois votre paire de clés SSH créée, configurez votre clé publique sur la
+Grappe IQ :
+
+.. code-block:: console
+
+    $ ssh-copy-id hpc.iq.ccs.usherbrooke.ca
+    /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: ssh-add -L
+    /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+    /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+    (alice@hpc.iq.ccs.usherbrooke.ca) Password:
+    (alice@hpc.iq.ccs.usherbrooke.ca) Duo two-factor login for alice
+
+    Enter a passcode or select one of the following options:
+
+     1. Duo Push to Samsung S23 Alice (Android)
+
+    Passcode or option (1-1):
+
+    Number of key(s) added: 1
+
+Vous devrez vous authentifier avec votre mot de passe CCDB et un deuxième
+facteur Duo pour que votre clé publique soit copiée vers le serveur par
+``ssh-copy-id``.
+
+Vous n’aurez plus à utiliser votre mot de passe pour les connexions
+subséquentes : votre clé privée sera utilisée à la place. Vous devrez toutefois
+entrer votre phrase de passe afin de déchiffrer cette clé. Si vous utilisez un
+gestionnaire de mots de passe (e.g. Windows Credential Manager, MacOS Passwords,
+SSH Agent), vous n’aurez à déchiffer votre clé qu’une fois par session.
+
+.. note::
+    - Le terme « phrase de passe »  est utilisé en cryptographie par analogie
+      avec les mots de passe. Pour votre paire de clés SSH, il n’est toutefois
+      pas nécessaire que cette « phrase » soit plus longue que les mots de passe
+      sécuritaires habituels.
+    - La Grappe IQ n’utilise pas les clés SSH publiques configurées dans votre
+      compte CCDB. Vous devez configurer votre clé avec la commande
+      ``ssh-copy-id`` tel qu’expliqué ci-haut.
+    - Les clés SSH améliorent la sécurité en évitant d’exposer votre mot de
+      passe. Ainsi, même si la Grappe IQ était compromise, votre compte CCDB
+      demeurerait sécurisé.
+
+.. seealso::
+   - Documentation technique de l’Alliance :
+       - `Clés SSH <https://docs.alliancecan.ca/wiki/SSH_Keys/fr>`_
