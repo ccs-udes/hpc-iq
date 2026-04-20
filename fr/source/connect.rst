@@ -182,3 +182,75 @@ SSH Agent), vous n’aurez à déchiffer votre clé qu’une fois par session.
 .. seealso::
    - Documentation technique de l’Alliance :
        - `Clés SSH <https://docs.alliancecan.ca/wiki/SSH_Keys/fr>`_
+
+Configuration d’OpenSSH
+-----------------------
+
+Les outils OpenSSH peuvent être configurés sur votre ordinateur à l’aide du
+fichier de configuration ``$HOME/.ssh/config``, que vous pouvez éditer à l’aide
+d’un éditeur de texte (e.g. Nano, Notepad). Si vous configurez OpenSSH pour la
+première fois, vous devrez créer ce fichier.
+
+Simplifier la commande de connexion
+'''''''''''''''''''''''''''''''''''
+
+Nous recommandons de créer un raccourci avec un nom court afin d’éviter d’avoir
+à taper l’adresse ``hpc.iq.ccs.usherbrooke.ca`` au long à chaque connexion :
+
+.. code-block::
+
+    Host iq
+    Hostname hpc.iq.ccs.usherbrooke.ca
+
+Si votre nom d’utilisateur CCDB n’est pas le même que votre nom d’utilisateur
+sur votre ordinateur, ajoutez l’option ``User`` :
+
+.. code-block::
+    :emphasize-lines: 3
+
+    Host iq
+    Hostname hpc.iq.ccs.usherbrooke.ca
+    User alice
+
+Avec cette configuration en place, vous pourrez vous connecter à la Grappe IQ
+avec simplement :
+
+.. code-block:: console
+
+    $ ssh iq
+
+Éviter les invites MFA répétitives
+''''''''''''''''''''''''''''''''''
+
+L’authentification multifacteur avec Duo demande l’utilisation d’un second
+facteur à chaque connexion. Pour éviter ce désagrément, nous recommandons
+d’activer le multiplexeur OpenSSH. Ainsi, une connexion authentifiée sera
+réutilisée lorsque vous établissez une nouvelle session. Vous n’aurez donc pas à
+utiliser un second facteur Duo ou même à déchiffrer votre clé SSH privée plus
+d’une fois. Pour ce faire, ajoutez les options ``Control...`` suivantes :
+
+.. code-block::
+    :emphasize-lines: 3-5
+
+    Host iq
+    Hostname hpc.iq.ccs.usherbrooke.ca
+    ControlPath ~/.ssh/cm-%r@%h:%p
+    ControlMaster auto
+    ControlPersist 60m
+
+Éviter les déconnexions intempestives
+'''''''''''''''''''''''''''''''''''''
+
+Certains serveurs et réseaux interrompent les connexions SSH inactives après
+quelques minutes. Pour éviter ce désagrément, vous pouvez configurer OpenSSH
+afin d’envoyer périodiquement un signal au serveur indiquant que la connexion
+est toujours active. Pour ce faire, ajoutez l’option ``ServerAliveInterval`` au
+début de votre fichier de configuration, avant la première entrée ``Host`` :
+
+.. code-block::
+    :emphasize-lines: 1
+
+    ServerAliveInterval 60
+
+    Host iq
+    Hostname hpc.iq.ccs.usherbrooke.ca
