@@ -19,11 +19,12 @@ Your job causes an “illegal instruction” or ``SIGILL`` error, for instance:
 Such errors happen when a program was optimised for a specific class of
 processors but is being run on an incompatible processor.
 
-If you compile your code on ``iv11`` with GCC, use the ``-march=core-avx2``
-optimisation option. If you use the Intel compilers, the corresponding option is
-``-xCORE-AVX2``. Do not use ``-march=native`` or ``-xHost``. The latter attempt
-to optimise for the Intel processors on ``iv11``. The resulting program can be
-incompatible with some compute nodes’ AMD processors.
+If you compile your code on the login node with GCC, use the
+``-march=core-avx2`` optimisation option. If you use the Intel compilers, the
+corresponding option is ``-xCORE-AVX2``. Do not use ``-march=native`` or
+``-xHost``. The latter attempt to optimise for the Intel processors on the login
+node. The resulting program can be incompatible with the AMD processors of some
+compute nodes.
 
 .. _calcul-lent-label:
 

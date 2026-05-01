@@ -20,11 +20,11 @@ example:
 Cette erreur se produit lorsqu’un programme optimisé pour une classe de
 processeurs particuliers est exécuté sur un processeur qui n’est pas compatible.
 
-Si vous compilez votre code sur ``iv11`` avec GCC, utilisez l’option
+Si vous compilez votre code sur le nœud de connexion avec GCC, utilisez l’option
 d’optimisation ``-march=core-avx2``. Si vous utilisez les compilateurs Intel,
 l’option correspondante est ``-xCORE-AVX2``. N’utilisez pas ``-march=native`` ou
-``-xHost``. Ces dernières tentent d’optimiser pour les processeurs Intel
-d’``iv11``. Le programme résultant peut être incompatible avec les processeurs
+``-xHost``. Ces dernières tentent d’optimiser pour les processeurs Intel du nœud
+de connexion. Le programme résultant peut être incompatible avec les processeurs
 AMD de certains nœuds de calcul.
 
 .. _calcul-lent-label:
