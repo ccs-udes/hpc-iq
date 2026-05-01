@@ -72,7 +72,7 @@ Finalement, vous obtiendrez un message indiquant que la connexion a été
                        Support fr/en: olivier.fisette@usherbrooke.ca
                                       michel.l.barrette@usherbrooke.ca (backup)
 
-    [alice@ip09 ~]$
+    [alice@iv11 ~]$
 
 .. seealso::
    - `SSH <https://docs.alliancecan.ca/wiki/SSH/fr>`_ (documentation technique

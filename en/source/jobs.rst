@@ -12,7 +12,7 @@ Running jobs
 Login nodes
 -----------
 
-Use the login node (``ip09``) to prepare your jobs. It is however forbidden to
+Use the login node (``iv11``) to prepare your jobs. It is however forbidden to
 run jobs directly on this node! Cluster login nodes do not have the necessary
 computing power to run jobs. In addition, running a job on a login node can slow
 it down considerably, which negatively impacts all connected researchers. All
@@ -55,7 +55,7 @@ For example, to use one GPU in an interactive job:
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ salloc --gres=gpu
+    [alice@iv11 ~]$ salloc --gres=gpu
 
 To use both GPUs in a job script:
 
@@ -113,7 +113,7 @@ the partitions you have access to:
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ susage
+    [alice@iv11 ~]$ susage
     iq-main:  nodes: (2+1)/4 cpus: 104/336 mem: 1.0T/2.0T gpus: 0/2
               ██████▓▓▓░░░░░ ████░░░░░░░░░ ███████░░░░░░░ ░░░░░░░░░
     iq-alice:                cpus: 192/192 mem: 612G/2.2T
@@ -124,7 +124,7 @@ As an example, to show available resources, with a legend, only for the
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ susage --available --legend iq-main
+    [alice@iv11 ~]$ susage --available --legend iq-main
     iq-main: nodes: (1+1)/4 cpus: 232/336 mem: 1.0T/2.0T gpus: 2/2
              ███▓▓▓░░░░░░░░ █████████░░░░ ███████░░░░░░░ █████████
 
@@ -153,11 +153,11 @@ and belonging to Alice, which matches the 4 CPUs allocated to her job.
 
 .. code-block:: console
 
-   [alice@ip09 ~]$ sq
+   [alice@iv11 ~]$ sq
              JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS       GRES MIN_MEM NODELIST (REASON)
            5623630 alice    def-alice         md-job.sh   R      14:56     1    4     (null)      1G cp1433 (None)
-   [alice@ip09 ~]$ ssh cp1433
-   Last login: Wed Aug 21 11:16:34 2024 from ip09.m
+   [alice@iv11 ~]$ ssh cp1433
+   Last login: Wed Aug 21 11:16:34 2024 from iv11.m
    [alice@cp1433-mp2 ~]$ htop
 
        0[||||||||100.0%]    8[          0.0%]    16[          0.0%]   24[          0.0%]
@@ -196,8 +196,8 @@ and the programs using them. For example:
 
 .. code-block:: console
 
-   [alice@ip09 ~]$ ssh cp3705
-   Last login: Wed Aug 21 13:47:44 2024 from ip09.m
+   [alice@iv11 ~]$ ssh cp3705
+   Last login: Wed Aug 21 13:47:44 2024 from iv11.m
    [alice@cp3705-mp2 ~]$ nvidia-smi
    Wed Aug 21 13:52:41 2024
    +-----------------------------------------------------------------------------------------+

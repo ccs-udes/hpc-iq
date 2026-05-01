@@ -13,16 +13,16 @@ Your job causes an “illegal instruction” or ``SIGILL`` error, for instance:
 
 .. code-block:: console
 
-   [alice@ip09 ~]$ cat slurm-3304643.out
+   [alice@iv11 ~]$ cat slurm-3304643.out
    /var/spool/slurmd/job3304643/slurm_script: line 11: 25047 Illegal instruction   (core dumped) python my_script.py
 
 Such errors happen when a program was optimised for a specific class of
 processors but is being run on an incompatible processor.
 
-If you compile your code on ``ip09`` with GCC, use the ``-march=core-avx2``
+If you compile your code on ``iv11`` with GCC, use the ``-march=core-avx2``
 optimisation option. If you use the Intel compilers, the corresponding option is
 ``-xCORE-AVX2``. Do not use ``-march=native`` or ``-xHost``. The latter attempt
-to optimise for the Intel processors on ``ip09``. The resulting program can be
+to optimise for the Intel processors on ``iv11``. The resulting program can be
 incompatible with some compute nodes’ AMD processors.
 
 .. _calcul-lent-label:

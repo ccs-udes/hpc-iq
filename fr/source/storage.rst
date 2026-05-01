@@ -8,7 +8,7 @@ Votre répertoire personnel est accessible à ``$HOME``. Par exemple :
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ echo $HOME
+    [alice@iv11 ~]$ echo $HOME
     /home/alice
 
 C’est le bon emplacement pour vos fichiers de configuration, votre code et les
@@ -40,9 +40,9 @@ accessible à ``/net/nfs-iq/data/$USER``. Par exemple :
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ echo $USER
+    [alice@iv11 ~]$ echo $USER
     alice
-    [alice@ip09 ~]$ cd /net/nfs-iq/data/alice
+    [alice@iv11 ~]$ cd /net/nfs-iq/data/alice
 
 Données des groupes
 '''''''''''''''''''
@@ -54,9 +54,9 @@ directeur ou de la directrice du groupe de recherche. (Cette forme est identique
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ echo $USER
+    [alice@iv11 ~]$ echo $USER
     alice
-    [alice@ip09 ~]$ cd /net/nfs-iq/data/def-alice
+    [alice@iv11 ~]$ cd /net/nfs-iq/data/def-alice
 
 Stockage local sur les nœuds de calcul
 --------------------------------------

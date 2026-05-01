@@ -18,7 +18,7 @@ To list available Mathematica versions:
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ ls /net/nfs-iq/data/software/Mathematica/
+    [alice@iv11 ~]$ ls /net/nfs-iq/data/software/Mathematica/
     12.1  14.0
 
 To use Mathematica in a job script:
@@ -38,7 +38,7 @@ To use Mathematica in an interactive job:
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ salloc -t 2:00:00 -c 2 --mem=8G
+    [alice@iv11 ~]$ salloc -t 2:00:00 -c 2 --mem=8G
     salloc: Granted job allocation 5843885
     salloc: Waiting for resource configuration
     salloc: Nodes cp3702 are ready for job

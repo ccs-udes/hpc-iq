@@ -68,7 +68,7 @@ Finally, you will get a message indicating that the connection was successful:
                        Support fr/en: olivier.fisette@usherbrooke.ca
                                       michel.l.barrette@usherbrooke.ca (backup)
 
-    [alice@ip09 ~]$
+    [alice@iv11 ~]$
 
 .. seealso::
    - `SSH <https://docs.alliancecan.ca/wiki/SSH/en>`_ (Alliance technical

@@ -40,4 +40,4 @@ exemple :
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ module load ansys/2023R2
+    [alice@iv11 ~]$ module load ansys/2023R2

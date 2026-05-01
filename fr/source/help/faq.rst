@@ -14,17 +14,17 @@ example:
 
 .. code-block:: console
 
-   [alice@ip09 ~]$ cat slurm-3304643.out
+   [alice@iv11 ~]$ cat slurm-3304643.out
    /var/spool/slurmd/job3304643/slurm_script: line 11: 25047 Illegal instruction   (core dumped) python my_script.py
 
 Cette erreur se produit lorsqu’un programme optimisé pour une classe de
 processeurs particuliers est exécuté sur un processeur qui n’est pas compatible.
 
-Si vous compilez votre code sur ``ip09`` avec GCC, utilisez l’option
+Si vous compilez votre code sur ``iv11`` avec GCC, utilisez l’option
 d’optimisation ``-march=core-avx2``. Si vous utilisez les compilateurs Intel,
 l’option correspondante est ``-xCORE-AVX2``. N’utilisez pas ``-march=native`` ou
 ``-xHost``. Ces dernières tentent d’optimiser pour les processeurs Intel
-d’``ip09``. Le programme résultant peut être incompatible avec les processeurs
+d’``iv11``. Le programme résultant peut être incompatible avec les processeurs
 AMD de certains nœuds de calcul.
 
 .. _calcul-lent-label:

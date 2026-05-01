@@ -19,7 +19,7 @@ modules avec ``module spider`` et les ajouter à votre environnement avec
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ module list
+    [alice@iv11 ~]$ module list
 
     Currently Loaded Modules:
       1) CCconfig            6) ucx/1.14.1            11) flexiblas/3.3.1
@@ -35,7 +35,7 @@ modules avec ``module spider`` et les ajouter à votre environnement avec
        t:     Tools for development / Outils de développement
        H:                Hidden Module
 
-    [alice@ip09 ~]$ module spider gromacs
+    [alice@iv11 ~]$ module spider gromacs
 
     --------------------------------------------------------------------------------------
       gromacs:
@@ -76,7 +76,7 @@ modules avec ``module spider`` et les ajouter à votre environnement avec
          $ module spider gromacs/2024.4
     --------------------------------------------------------------------------------------
 
-    [alice@ip09 ~]$ module spider gromacs/2024.4
+    [alice@iv11 ~]$ module spider gromacs/2024.4
 
     --------------------------------------------------------------------------------------
       gromacs: gromacs/2024.4
@@ -106,9 +106,9 @@ modules avec ``module spider`` et les ajouter à votre environnement avec
           ================
            - Homepage: http://www.gromacs.org
 
-    [alice@ip09 ~]$ module load StdEnv/2023 gcc/12.3 openmpi/4.1.5
-    [alice@ip09 ~]$ module load gromacs/2024.4
-    [alice@ip09 ~]$ module list
+    [alice@iv11 ~]$ module load StdEnv/2023 gcc/12.3 openmpi/4.1.5
+    [alice@iv11 ~]$ module load gromacs/2024.4
+    [alice@iv11 ~]$ module list
 
     Currently Loaded Modules:
       1) CCconfig                         10) hwloc/2.9.1
@@ -140,7 +140,7 @@ chargés. Par exemple :
 
 .. code-block:: console
 
-    [alice@ip09 ~]$ module load StdEnv/2020
+    [alice@iv11 ~]$ module load StdEnv/2020
 
     Modules inactifs:
       1) slurm-completion
