@@ -1,0 +1,592 @@
+<!doctype html>
+<html class="no-js" lang="fr" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Recherche" href="search.html"><link rel="next" title="Stockage" href="storage.html"><link rel="prev" title="Compte" href="account.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Connexion - Grappe IQ</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --font-stack: Lato, sans-serif;
+  --font-stack--headings: Lato, sans-serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Grappe IQ</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <span class="sidebar-brand-text">Grappe IQ</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Recherche" name="q" aria-label="Recherche">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Langue | Language</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/en/">English</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/fr/">Français</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="account.html">Compte</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Connexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="software/index.html">Logiciels</a><input aria-label="Toggle navigation of Logiciels" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="software/ansys.html">Ansys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/mathematica.html">Mathematica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/pyqcm.html">Pyqcm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/qiskit.html">Qiskit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/quimb.html">QUIMB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software/quspin.html">QuSpin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Lancer des tâches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes.html">Nœuds de calcul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Résumé</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help/faq.html">Foire aux questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help/list.html">Liste de diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help/support.html">Soutien technique</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Liens externes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.physique.usherbrooke.ca/quantique-udes">Logiciels développés à l’IQ</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.alliancecan.ca/wiki/Technical_documentation/fr">Documentation technique de l’Alliance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.calculquebec.ca/services-aux-chercheurs/formation/">Formations de Calcul Québec</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccdb.alliancecan.ca/">Portail CCDB</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/connect.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="connexion">
+<h1>Connexion<a class="headerlink" href="#connexion" title="Lien vers cette rubrique">¶</a></h1>
+<p>L’accès à la Grappe IQ se fait par SSH (Secure Shell). L’adresse de la grappe
+est <code class="docutils literal notranslate"><span class="pre">hpc.iq.ccs.usherbrooke.ca</span></code>.</p>
+<p>Les systèmes d’exploitation récents (Linux, MacOS, Windows 11) incluent
+habituellement l’ensemble d’outils OpenSSH. Pour vous connecter à la grappe en
+mode ligne de commande, ouvrez d’abord une fenêtre de terminal (nommé PowerShell
+dans Windows). Dans cette fenêtre, utilisez la commande <code class="docutils literal notranslate"><span class="pre">ssh</span></code> pour établir une
+connexion :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>alice@hpc.iq.ccs.usherbrooke.ca
+</pre></div>
+</div>
+<p>Remplacez <code class="docutils literal notranslate"><span class="pre">alice</span></code> par votre nom d’utilisateur.</p>
+<p>Lorsque vous vous connectez pour la première fois, votre programme affichera
+l’empreinte de la clé de chiffrement du serveur et vous demandera de confirmer
+que vous souhaitez vous connecter. Une fois cette confirmation donnée, votre
+programme enregistrera la clé du nœud de connexion dans la liste des hôtes
+connus. Ce dialogue prendra la forme suivante :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">The authenticity of host &#39;hpc.iq.ccs.usherbrooke.ca (204.19.23.210)&#39; can&#39;t be established.</span>
+<span class="go">ED25519 key fingerprint is SHA256:hVAo6KoqKOEbtOaBh6H6GYHAvsStPsDEcg4LXBQUP50.</span>
+<span class="go">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span>
+<span class="go">Warning: Permanently added &#39;hpc.iq.ccs.usherbrooke.ca&#39; (ED25519) to the list of known hosts.</span>
+</pre></div>
+</div>
+<p>L’empreinte de la clé du serveur devrait correspondre à celle donnée dans
+l’exemple ci-haut.</p>
+<p>Entrez ensuite votre mot de passe CCDB. Notez qu’aucun caractère ne s’affichera
+à l’écran pendant la saisie de votre mot de passe.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(alice@hpc.iq.ccs.usherbrooke.ca)</span> <span class="go">Password:</span>
+</pre></div>
+</div>
+<p>Utilisez un second facteur d’authentification pour compléter le processus de
+connexion. Cette invite différera selon le ou les appareils que vous avez
+enregistrés dans CCDB. Dans l’exemple suivant, Alice a enregistré un téléphone
+Android :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(alice@hpc.iq.ccs.usherbrooke.ca)</span> <span class="go">Duo two-factor login for alice</span>
+
+<span class="go">Enter a passcode or select one of the following options:</span>
+
+<span class="go"> 1. Duo Push to Samsung S23 Alice (Android)</span>
+
+<span class="go">Passcode or option (1-1):</span>
+</pre></div>
+</div>
+<p>En tapant <code class="docutils literal notranslate"><span class="pre">1</span></code>, Alice obtiendrait une notification sur son téléphone.</p>
+<p>Finalement, vous obtiendrez un message indiquant que la connexion a été
+établie :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Success. Logging you in...</span>
+<span class="go">Last login: Wed Apr  9 10:45:16 2025 from 24.203.57.88</span>
+<span class="go">  _____ ____</span>
+<span class="go"> |_   _/ __ \   Grappe IQ / IQ Cluster</span>
+<span class="go">   | || |  | |  hpc.iq.ccs.usherbrooke.ca</span>
+<span class="go">   | || |  | |</span>
+<span class="go">  _| || |__| |  Documentation fr: https://ccs-udes.github.io/hpc-iq/fr</span>
+<span class="go"> |_____\___\_\                en: https://ccs-udes.github.io/hpc-iq/en</span>
+<span class="go">                   Support fr/en: olivier.fisette@usherbrooke.ca</span>
+<span class="go">                                  michel.l.barrette@usherbrooke.ca (backup)</span>
+
+<span class="gp">[alice@iv11 ~]$</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.alliancecan.ca/wiki/SSH/fr">SSH</a> (documentation technique
+de l’Alliance)</p></li>
+</ul>
+</div>
+<section id="clients-ssh-alternatifs">
+<h2>Clients SSH alternatifs<a class="headerlink" href="#clients-ssh-alternatifs" title="Lien vers cette rubrique">¶</a></h2>
+<p>Bien qu’un client SSH soit maintenant inclus avec Windows (depuis la version 10
+1803), certains chercheurs préfèrent utiliser un client tierce partie pour
+bénéficier de fonctionnalités supplémentaires ou simplement par habitude. Des
+choix populaires sont :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mobaxterm.mobatek.net/">MobaXterm</a></p></li>
+<li><p><a class="reference external" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a></p></li>
+<li><p><a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install">Windows Subsystem for Linux (WSL)</a></p></li>
+</ul>
+<p>Nous recommandons MobaXterm aux nouveaux utilisateurs plutôt que PuTTY puisque
+le premier offre davantage de fonctionnalités. Pour sa part, WSL n’est pas un
+client SSH proprement dit mais plutôt un système Linux virtuel installé à
+l’intérieur de Windows. WSL donne accès aux commandes Linux de base, incluant
+les commandes pour SSH.</p>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Documentation technique de l’Alliance :</dt><dd><ul>
+<li><p><a class="reference external" href="https://docs.alliancecan.ca/wiki/Connecting_with_MobaXTerm/fr">Connexion à un serveur avec MobaXterm</a></p></li>
+<li><p><a class="reference external" href="https://docs.alliancecan.ca/wiki/Connecting_with_PuTTY/fr">Connexion à un serveur avec PuTTY</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</section>
+<section id="cles-ssh">
+<h2>Clés SSH<a class="headerlink" href="#cles-ssh" title="Lien vers cette rubrique">¶</a></h2>
+<p>Il est préférable d’utiliser une paire de clés SSH pour vous connecter plutôt
+que votre mot de passe. Cela améliore la sécurité tout en étant plus pratique.
+Si vous n’avez pas déjà une paire de clés, vous pouvez en générer une dans votre
+terminal sur votre ordinateur avec :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh-keygen
+<span class="go">Generating public/private ed25519 key pair.</span>
+<span class="go">Enter file in which to save the key (/home/alice/.ssh/id_ed25519):</span>
+<span class="go">Enter passphrase (empty for no passphrase):</span>
+<span class="go">Enter same passphrase again:</span>
+<span class="go">Your identification has been saved in /home/alice/.ssh/id_ed25519.</span>
+<span class="go">Your public key has been saved in /home/alice/.ssh/id_ed25519.pub.</span>
+<span class="go">The key fingerprint is:</span>
+<span class="go">SHA256:GLyOJ2mS7f7d4MPEGu00sa34oSmr7/cTJremUD/G2hI alice@laptop</span>
+<span class="go">The key&#39;s randomart image is:</span>
+<span class="go">+--[ED25519 256]--+</span>
+<span class="go">|                 |</span>
+<span class="go">|     .           |</span>
+<span class="go">|      o          |</span>
+<span class="go">|       +.        |</span>
+<span class="go">|      +oS+       |</span>
+<span class="go">|   o =Eo@ .      |</span>
+<span class="go">|  o B o&amp;B=       |</span>
+<span class="go">|   +.+=OO=       |</span>
+<span class="go">|  .=*=***o.      |</span>
+<span class="go">+----[SHA256]-----+</span>
+</pre></div>
+</div>
+<p>À l’invite, entrez une phrase de passe sécuritaire : au moins 12 caractères,
+incluant des lettres minuscules et majuscules, des chiffres et des caractères
+spéciaux. Cette phrase sera utilisée pour chiffrer votre clé privée.</p>
+<p>Une fois votre paire de clés SSH créée, configurez votre clé publique sur la
+Grappe IQ :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh-copy-id<span class="w"> </span>hpc.iq.ccs.usherbrooke.ca
+<span class="go">/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: ssh-add -L</span>
+<span class="go">/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed</span>
+<span class="go">/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys</span>
+<span class="gp gp-VirtualEnv">(alice@hpc.iq.ccs.usherbrooke.ca)</span> <span class="go">Password:</span>
+<span class="gp gp-VirtualEnv">(alice@hpc.iq.ccs.usherbrooke.ca)</span> <span class="go">Duo two-factor login for alice</span>
+
+<span class="go">Enter a passcode or select one of the following options:</span>
+
+<span class="go"> 1. Duo Push to Samsung S23 Alice (Android)</span>
+
+<span class="go">Passcode or option (1-1):</span>
+
+<span class="go">Number of key(s) added: 1</span>
+</pre></div>
+</div>
+<p>Vous devrez vous authentifier avec votre mot de passe CCDB et un deuxième
+facteur Duo pour que votre clé publique soit copiée vers le serveur par
+<code class="docutils literal notranslate"><span class="pre">ssh-copy-id</span></code>.</p>
+<p>Vous n’aurez plus à utiliser votre mot de passe pour les connexions
+subséquentes : votre clé privée sera utilisée à la place. Vous devrez toutefois
+entrer votre phrase de passe afin de déchiffrer cette clé. Si vous utilisez un
+gestionnaire de mots de passe (e.g. Windows Credential Manager, MacOS Passwords,
+SSH Agent), vous n’aurez à déchiffer votre clé qu’une fois par session.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Le terme « phrase de passe »  est utilisé en cryptographie par analogie
+avec les mots de passe. Pour votre paire de clés SSH, il n’est toutefois
+pas nécessaire que cette « phrase » soit plus longue que les mots de passe
+sécuritaires habituels.</p></li>
+<li><p>La Grappe IQ n’utilise pas les clés SSH publiques configurées dans votre
+compte CCDB. Vous devez configurer votre clé avec la commande
+<code class="docutils literal notranslate"><span class="pre">ssh-copy-id</span></code> tel qu’expliqué ci-haut.</p></li>
+<li><p>Les clés SSH améliorent la sécurité en évitant d’exposer votre mot de
+passe. Ainsi, même si la Grappe IQ était compromise, votre compte CCDB
+demeurerait sécurisé.</p></li>
+</ul>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.alliancecan.ca/wiki/SSH_Keys/fr">Clés SSH</a> (documentation
+technique de l’Alliance)</p></li>
+</ul>
+</div>
+</section>
+<section id="configuration-dopenssh">
+<h2>Configuration d’OpenSSH<a class="headerlink" href="#configuration-dopenssh" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les outils OpenSSH peuvent être configurés sur votre ordinateur à l’aide du
+fichier de configuration <code class="docutils literal notranslate"><span class="pre">$HOME/.ssh/config</span></code>, que vous pouvez éditer à l’aide
+d’un éditeur de texte (e.g. Nano, Notepad). Si vous configurez OpenSSH pour la
+première fois, vous devrez créer ce fichier.</p>
+<section id="simplifier-la-commande-de-connexion">
+<h3>Simplifier la commande de connexion<a class="headerlink" href="#simplifier-la-commande-de-connexion" title="Lien vers cette rubrique">¶</a></h3>
+<p>Nous recommandons de créer un raccourci afin d’éviter d’avoir à taper l’adresse
+<code class="docutils literal notranslate"><span class="pre">hpc.iq.ccs.usherbrooke.ca</span></code> au long à chaque connexion :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="n">iq</span>
+<span class="n">Hostname</span> <span class="n">hpc</span><span class="o">.</span><span class="n">iq</span><span class="o">.</span><span class="n">ccs</span><span class="o">.</span><span class="n">usherbrooke</span><span class="o">.</span><span class="n">ca</span>
+</pre></div>
+</div>
+<p>Si votre nom d’utilisateur CCDB n’est pas le même que votre nom d’utilisateur
+sur votre ordinateur, ajoutez l’option <code class="docutils literal notranslate"><span class="pre">User</span></code> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="n">iq</span>
+<span class="n">Hostname</span> <span class="n">hpc</span><span class="o">.</span><span class="n">iq</span><span class="o">.</span><span class="n">ccs</span><span class="o">.</span><span class="n">usherbrooke</span><span class="o">.</span><span class="n">ca</span>
+<span class="hll"><span class="n">User</span> <span class="n">alice</span>
+</span></pre></div>
+</div>
+<p>Avec cette configuration en place, vous pourrez vous connecter à la Grappe IQ
+avec simplement :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>iq
+</pre></div>
+</div>
+</section>
+<section id="eviter-les-invites-mfa-repetitives">
+<h3>Éviter les invites MFA répétitives<a class="headerlink" href="#eviter-les-invites-mfa-repetitives" title="Lien vers cette rubrique">¶</a></h3>
+<p>L’authentification multifacteur avec Duo demande l’utilisation d’un second
+facteur à chaque connexion. Pour éviter cette torture, nous recommandons
+d’activer le multiplexeur OpenSSH. Ainsi, une connexion authentifiée sera
+réutilisée lorsque vous établissez une nouvelle session. Vous n’aurez donc pas à
+utiliser un second facteur Duo ou même à déchiffrer votre clé SSH privée plus
+d’une fois.</p>
+<p>Ajoutez les options <code class="docutils literal notranslate"><span class="pre">Control...</span></code> suivantes :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="n">iq</span>
+<span class="n">Hostname</span> <span class="n">hpc</span><span class="o">.</span><span class="n">iq</span><span class="o">.</span><span class="n">ccs</span><span class="o">.</span><span class="n">usherbrooke</span><span class="o">.</span><span class="n">ca</span>
+<span class="hll"><span class="n">ControlPath</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">cm</span><span class="o">-%</span><span class="n">r</span><span class="o">@%</span><span class="n">h</span><span class="p">:</span><span class="o">%</span><span class="n">p</span>
+</span><span class="hll"><span class="n">ControlMaster</span> <span class="n">auto</span>
+</span><span class="hll"><span class="n">ControlPersist</span> <span class="mi">60</span><span class="n">m</span>
+</span></pre></div>
+</div>
+</section>
+<section id="eviter-les-deconnexions-intempestives">
+<h3>Éviter les déconnexions intempestives<a class="headerlink" href="#eviter-les-deconnexions-intempestives" title="Lien vers cette rubrique">¶</a></h3>
+<p>Certains serveurs et réseaux interrompent les connexions SSH inactives après
+quelques minutes. Pour éviter ce désagrément, vous pouvez configurer OpenSSH
+afin d’envoyer périodiquement un signal au serveur indiquant que la connexion
+est toujours active.</p>
+<p>Ajoutez l’option <code class="docutils literal notranslate"><span class="pre">ServerAliveInterval</span></code> au début de votre fichier de
+configuration, avant la première entrée <code class="docutils literal notranslate"><span class="pre">Host</span></code> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="n">ServerAliveInterval</span> <span class="mi">60</span>
+</span>
+<span class="n">Host</span> <span class="n">iq</span>
+<span class="n">Hostname</span> <span class="n">hpc</span><span class="o">.</span><span class="n">iq</span><span class="o">.</span><span class="n">ccs</span><span class="o">.</span><span class="n">usherbrooke</span><span class="o">.</span><span class="n">ca</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="storage.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Stockage</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="account.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Compte</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022-2026, CCS
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Connexion</a><ul>
+<li><a class="reference internal" href="#clients-ssh-alternatifs">Clients SSH alternatifs</a></li>
+<li><a class="reference internal" href="#cles-ssh">Clés SSH</a></li>
+<li><a class="reference internal" href="#configuration-dopenssh">Configuration d’OpenSSH</a><ul>
+<li><a class="reference internal" href="#simplifier-la-commande-de-connexion">Simplifier la commande de connexion</a></li>
+<li><a class="reference internal" href="#eviter-les-invites-mfa-repetitives">Éviter les invites MFA répétitives</a></li>
+<li><a class="reference internal" href="#eviter-les-deconnexions-intempestives">Éviter les déconnexions intempestives</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    </body>
+</html>
