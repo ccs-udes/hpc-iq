@@ -184,6 +184,7 @@ specificities of using that software on the IQ Cluster.
    :maxdepth: 1
 
    ansys
+   jupyterlab
    mathematica
    pyqcm
    python

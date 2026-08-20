@@ -190,6 +190,7 @@ mis sur les particularités de leur utilisation avec la Grappe IQ.
    :maxdepth: 1
 
    ansys
+   jupyterlab
    mathematica
    pyqcm
    python
