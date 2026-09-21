@@ -131,8 +131,14 @@ When prompted, enter a secure passphrase: at least 12 characters, including
 lowercase and uppercase letters, digits, and special characters. This phrase
 will be used to encrypt your private key.
 
-Once your SSH key pair has been generated, configure your public key on the IQ
-Cluster:
+Once your SSH key pair has been generated, `configure your public key in CCDB
+<https://ccdb.alliancecan.ca/ssh_authorized_keys>`_. This will allow you to
+perform key-based authentication to the IQ cluster and to Alliance clusters.
+
+Alternatively, you can configure your public key only on the IQ cluster with the
+following command. Note that, in order to copy your public key to the server,
+``ssh-copy-id`` will prompt you to authenticate with your CCDB password and a
+Duo second factor:
 
 .. code-block:: console
 
@@ -151,22 +157,19 @@ Cluster:
 
     Number of key(s) added: 1
 
-In order to copy your public key to the server, ``ssh-copy-id`` will prompt you
-to authenticate with your CCDB password and a Duo second factor.
+If you configured your public key in CCDB, there is no need to run the above
+``ssh-copy-id`` command.
 
-You will no longer need to use your password for subsequent connections: your
-private key will be used instead. You will, however, need to input your
-passphrase to decrypt that key. If you use a password manager (e.g. Windows
-Credential Manager, MacOS Passwords, SSH Agent), you will only need to decrypt
-your key once per session.
+Once your public key has been configured, you will no longer need to use your
+password for subsequent connections: your private key will be used instead. You
+will, however, need to input your passphrase to decrypt that key. If you use a
+password manager (e.g. Windows Credential Manager, MacOS Passwords, SSH Agent),
+you will only need to decrypt your key once per session.
 
 .. note::
     - The term “passphrase” is used in cryptography as an analogy with
       passwords. For your SSH key pair, it is however not necessary for this
       “phrase” to be any longer than a typical secure password.
-    - The IQ Cluster does not use the SSH public keys configured in your CCDB
-      account. You must configure your key with ``ssh-copy-id`` as explained
-      above.
     - SSH keys improve security by avoiding to expose your password. Thus, even
       if the IQ Cluster was compromised, your CCDB account would remain secure.
 

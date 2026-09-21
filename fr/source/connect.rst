@@ -137,8 +137,14 @@ terminal sur votre ordinateur avec :
 incluant des lettres minuscules et majuscules, des chiffres et des caractères
 spéciaux. Cette phrase sera utilisée pour chiffrer votre clé privée.
 
-Une fois votre paire de clés SSH créée, configurez votre clé publique sur la
-Grappe IQ :
+Une fois votre paire de clés SSH créée, `configurez votre clé publique dans CCDB
+<https://ccdb.alliancecan.ca/ssh_authorized_keys>`_. Cela vous permettra de vous
+authentifier par clé sur la Grappe IQ ainsi que sur les grappes de l’Alliance.
+
+Alternativement, vous pouvez configurer votre clé publique uniquement sur la
+Grappe IQ avec la commande suivante. Notez que vous devrez vous authentifier
+avec votre mot de passe CCDB et un deuxième facteur Duo pour que votre clé
+publique soit copiée vers le serveur par ``ssh-copy-id``_:
 
 .. code-block:: console
 
@@ -157,24 +163,21 @@ Grappe IQ :
 
     Number of key(s) added: 1
 
-Vous devrez vous authentifier avec votre mot de passe CCDB et un deuxième
-facteur Duo pour que votre clé publique soit copiée vers le serveur par
-``ssh-copy-id``.
+Si vous avez configuré votre clé publique dans CCDB, il n’est pas nécessaire
+d’exécuter la commande ``ssh-copy-id`` ci-haut.
 
-Vous n’aurez plus à utiliser votre mot de passe pour les connexions
-subséquentes : votre clé privée sera utilisée à la place. Vous devrez toutefois
-entrer votre phrase de passe afin de déchiffrer cette clé. Si vous utilisez un
-gestionnaire de mots de passe (e.g. Windows Credential Manager, MacOS Passwords,
-SSH Agent), vous n’aurez à déchiffer votre clé qu’une fois par session.
+Une fois votre clé publique configurée, vous n’aurez plus à utiliser votre mot
+de passe pour les connexions subséquentes : votre clé privée sera utilisée à la
+place. Vous devrez toutefois entrer votre phrase de passe afin de déchiffrer
+cette clé. Si vous utilisez un gestionnaire de mots de passe (e.g. Windows
+Credential Manager, MacOS Passwords, SSH Agent), vous n’aurez à déchiffer votre
+clé qu’une fois par session.
 
 .. note::
     - Le terme « phrase de passe »  est utilisé en cryptographie par analogie
       avec les mots de passe. Pour votre paire de clés SSH, il n’est toutefois
       pas nécessaire que cette « phrase » soit plus longue que les mots de passe
       sécuritaires habituels.
-    - La Grappe IQ n’utilise pas les clés SSH publiques configurées dans votre
-      compte CCDB. Vous devez configurer votre clé avec la commande
-      ``ssh-copy-id`` tel qu’expliqué ci-haut.
     - Les clés SSH améliorent la sécurité en évitant d’exposer votre mot de
       passe. Ainsi, même si la Grappe IQ était compromise, votre compte CCDB
       demeurerait sécurisé.
