@@ -15,7 +15,8 @@ C’est le bon emplacement pour vos fichiers de configuration, votre code et les
 logiciels que vous installez. Dû à sa capacité et à sa performance limitées, ce
 n’est pas le bon emplacement pour vos données de recherche et vous ne devriez
 pas l’utiliser pour lire et écrire de telles données lorsque vous :doc:`exécutez
-des tâches <jobs>`.
+des tâches <jobs>`. Il n’est pas possible de partager les fichiers dans votre
+répertoire personnel.
 
 Données de recherche
 --------------------
@@ -24,7 +25,8 @@ Les données de recherche sont stockées sur un serveur de 190T accessible à
 ``/net/nfs-iq/data``. Assurez-vous d’utiliser cet emplacement pour lire et
 écrire des données lorsque vous :doc:`exécutez des tâches <jobs>` ; il offre
 une meilleure performance entrée-sortie (« input/output, IO ») que votre
-répertoire personnel.
+répertoire personnel. C’est aussi le bon emplacement pour partager des fichiers
+avec d’autres chercheurs.
 
 Pour assurer leur sécurité en cas de défaillance d’un disque, les données de
 recherche sont redondantes, c’est-à-dire qu’elles sont stockées en deux

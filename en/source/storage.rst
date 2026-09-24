@@ -14,14 +14,16 @@ Your home directory is accessible at ``$HOME``. For instance:
 This is the right location for configuration files, your code, and software that
 you install. Due to limited capacity and performance, it is not the right
 location for research data and you should not use it to read and write such data
-when :doc:`running jobs <jobs>`.
+when :doc:`running jobs <jobs>`. It is not possible to share files in your
+home directory.
 
 Research data
 -------------
 
 Research data is stored on a 190T server accessible at ``/net/nfs-iq/data``. Use
 this locaton to read and write data when :doc:`running jobs <jobs>`; it offers
-better IO (input/output) performance than your home directory.
+better IO (input/output) performance than your home directory. It is also the
+right location to share files with other researchers.
 
 To ensure safety in case of a drive failure, research data is redundant,
 that is to say that two copies are stored. (The total physical capacity of the
