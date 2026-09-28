@@ -12,12 +12,20 @@ Running jobs
 Login nodes
 -----------
 
-Use the login node (``iv11``) to prepare your jobs. It is however forbidden to
-run jobs directly on this node! Cluster login nodes do not have the necessary
-computing power to run jobs. In addition, running a job on a login node can slow
-it down considerably, which negatively impacts all connected researchers. All
-jobs must be submitted to the scheduler using the appropriate commands:
-``sbatch``, ``salloc``, ``srun``.
+Use the login node (``iv11``) to prepare your jobs using command line tools.
+
+The use of integrated development environments (IDEs) that connect to the login
+node is forbidden. This includes Visual Studio Code and PyCham. These tools
+constantly index the files they have access to, which slows down reading and
+writing files for all connected researchers. For similar reasons, agentic
+artificial intelligence tools such as Claude Code are not allowed on the login
+node.
+
+It is also forbidden to run jobs directly on the login node! Cluster login nodes
+do not have the necessary computing power to run jobs. In addition, running a
+job on a login node can slow it down considerably, which negatively impacts all
+connected researchers. All jobs must be submitted to the scheduler using the
+appropriate commands: ``sbatch``, ``salloc``, ``srun``.
 
 Input/output
 ------------

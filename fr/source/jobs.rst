@@ -12,13 +12,23 @@ Lancer des tâches
 Nœuds de connexion
 ------------------
 
-Utilisez le nœud de connexion (``iv11``) pour préparer vos tâches. Il est
-toutefois interdit d’exécuter des tâches directement sur ce nœud ! Les nœuds de
-connexion des grappes ne disposent pas de la puissance de calcul nécessaire pour
-exécuter des tâches. De plus, exécuter une tâche sur un nœud de connexion peut
-le ralentir considérablement, ce qui nuit à tous les chercheurs connectés.
-Toutes les tâches doivent être soumises à l’ordonnanceur en utilisant les
-commandes appropriées : ``sbatch``, ``salloc``, ``srun``.
+Utilisez le nœud de connexion (``iv11``) pour préparer vos tâches à l’aide
+d’outils en ligne de commande.
+
+L’utilisation d’environnements de développement intégrés (IDE) qui se connectent
+au nœud de connexion est interdit. Cela inclut Visual Studio Code et PyCharm.
+Ces outils indexent constamment les fichiers auxquels ils ont accès, ce qui
+ralentit la lecture et l’écriture pour tous les chercheurs connectés. Pour des
+raisons similaires, les agents d’intelligence artificielle tels que Claude Code
+ne sont pas permis sur le nœud de connexion.
+
+Il est également interdit d’exécuter des tâches de calcul directement sur le
+nœud de connexion ! Les nœuds de connexion des grappes ne disposent pas de la
+puissance de calcul nécessaire pour exécuter des tâches. De plus, exécuter une
+tâche sur un nœud de connexion peut le ralentir considérablement, ce qui nuit à
+tous les chercheurs connectés. Toutes les tâches doivent être soumises à
+l’ordonnanceur en utilisant les commandes appropriées : ``sbatch``, ``salloc``,
+``srun``.
 
 Lecture-écriture
 ----------------
