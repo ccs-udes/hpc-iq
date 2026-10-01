@@ -16,16 +16,33 @@
      - ``cp3707``
      - 128
      - 1508G
-       
+
        (1,47T)
      - 2 x AMD EPYC 9554
-       
+
        ``genoa``
      -
      - 1T
-       
+
        (NVMe)
      - 28
+     - \A. Blais
+   * - ``iq-blais-gpu``
+     - ``cp3712``
+     - 64
+     - 500G
+
+       (0,48T)
+     - 1 x AMD EPYC 9555P
+
+       ``turin``
+     - 1 x Nvidia H200 NVL
+
+       ``nvidia_h200_nvl``
+     - 867G
+
+       (NVMe)
+     - 7
      - \A. Blais
    * - ``iq-aphex``
 
