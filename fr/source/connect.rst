@@ -144,7 +144,7 @@ authentifier par clé sur la Grappe IQ ainsi que sur les grappes de l’Alliance
 Alternativement, vous pouvez configurer votre clé publique uniquement sur la
 Grappe IQ avec la commande suivante. Notez que vous devrez vous authentifier
 avec votre mot de passe CCDB et un deuxième facteur Duo pour que votre clé
-publique soit copiée vers le serveur par ``ssh-copy-id``_:
+publique soit copiée vers le serveur par ``ssh-copy-id`` :
 
 .. code-block:: console
 
