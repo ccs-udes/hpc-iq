@@ -1,0 +1,506 @@
+<!doctype html>
+<html class="no-js" lang="fr" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Recherche" href="../search.html"><link rel="next" title="Mathematica" href="mathematica.html"><link rel="prev" title="Ansys" href="ansys.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>JupyterLab - Grappe IQ</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --font-stack: Lato, sans-serif;
+  --font-stack--headings: Lato, sans-serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Grappe IQ</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">Grappe IQ</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Recherche" name="q" aria-label="Recherche">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Langue | Language</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/en/">English</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccs-udes.github.io/hpc-iq/fr/">Français</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connect.html">Connexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../storage.html">Stockage</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Logiciels</a><input aria-label="Toggle navigation of Logiciels" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ansys.html">Ansys</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathematica.html">Mathematica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyqcm.html">Pyqcm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qiskit.html">Qiskit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quimb.html">QUIMB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quspin.html">QuSpin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../jobs.html">Lancer des tâches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodes.html">Nœuds de calcul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../summary.html">Résumé</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../help/faq.html">Foire aux questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../help/list.html">Liste de diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../help/support.html">Soutien technique</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Liens externes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.physique.usherbrooke.ca/quantique-udes">Logiciels développés à l’IQ</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.alliancecan.ca/wiki/Technical_documentation/fr">Documentation technique de l’Alliance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.calculquebec.ca/services-aux-chercheurs/formation/">Formations de Calcul Québec</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://ccdb.alliancecan.ca/">Portail CCDB</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/software/jupyterlab.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="jupyterlab">
+<h1>JupyterLab<a class="headerlink" href="#jupyterlab" title="Lien vers cette rubrique">¶</a></h1>
+<p>JupyterLab est un environnement web de développement interactif pour les
+<em>notebooks</em>, le code et les données. Sur la Grappe IQ, JupyterLab peut être
+exécuté comme serveur dans une tâche de calcul soumise à l’ordonnanceur. Un
+navigateur web est ensuite utilisé sur votre ordinateur local pour interagir
+avec le serveur.</p>
+<p>Suivez ce guide étape par étape pour installer JupyterLab dans un environnement
+virtuel Python dans votre répertoire personnel sur la grappe, démarrer le
+serveur dans une tâche de calcul, établir un tunnel SSH entre votre ordinateur
+local et le nœud de calcul exécutant le serveur, puis finalement vous connecter
+au serveur.</p>
+<p>Ce guide est basé sur la page <a class="reference external" href="https://docs.alliancecan.ca/wiki/Advanced_Jupyter_configuration/fr">Jupyter: Configuration avancée</a> de la
+documentation technique de l’Alliance, mais ajusté pour la grappe IQ et simplifé
+afin de couvrir l’utilisation de JupyterLab la plus typique. Si vous avez besoin
+de fonctionnalités avancées telles que RStudio ou JupyterLmod, voyez la page
+ci-haut.</p>
+<section id="installer-jupyterlab">
+<h2>Installer JupyterLab<a class="headerlink" href="#installer-jupyterlab" title="Lien vers cette rubrique">¶</a></h2>
+<p>Chargez un module pour la version de Python que vous souhaitez utiliser dans
+JupyterLab:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@iv11]$ </span>module<span class="w"> </span>load<span class="w"> </span>StdEnv/2023
+<span class="gp">[alice@iv11]$ </span>module<span class="w"> </span>load<span class="w"> </span>python/3.11.5
+</pre></div>
+</div>
+<p>Créez un environnement virtuel et installez-y JupyterLab:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@iv11]$ </span>virtualenv<span class="w"> </span>--no-download<span class="w"> </span><span class="nv">$HOME</span>/venv/jupyter-py311
+<span class="gp">[alice@iv11]$ </span><span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/venv/jupyter-py311/bin/activate
+<span class="gp">[alice@iv11]$ </span>pip<span class="w"> </span>install<span class="w"> </span>--no-index<span class="w"> </span>--upgrade<span class="w"> </span>pip
+<span class="gp">[alice@iv11]$ </span>pip<span class="w"> </span>install<span class="w"> </span>--no-index<span class="w"> </span>jupyterlab
+</pre></div>
+</div>
+</section>
+<section id="demarrer-le-serveur">
+<h2>Démarrer le serveur<a class="headerlink" href="#demarrer-le-serveur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Créez un script <code class="docutils literal notranslate"><span class="pre">jupyter-job.sh</span></code> qui démarre le serveur :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1">#SBATCH --job-name=jupyter</span>
+<span class="c1">#SBATCH --partition=iq-main</span>
+<span class="c1">#SBATCH --ntasks=1</span>
+<span class="c1">#SBATCH --cpus-per-task=2</span>
+<span class="c1">#SBATCH --mem-per-cpu=1G</span>
+<span class="c1">#SBATCH --time=4:00:00</span>
+
+module<span class="w"> </span>load<span class="w"> </span>StdEnv/2023
+module<span class="w"> </span>load<span class="w"> </span>python/3.11.5
+
+<span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/venv/jupyter-py311/bin/activate
+
+<span class="nb">unset</span><span class="w"> </span>XDG_RUNTIME_DIR
+
+jupyter<span class="w"> </span>lab<span class="w"> </span>--ip<span class="w"> </span><span class="k">$(</span>hostname<span class="k">)</span><span class="w"> </span>--no-browser
+</pre></div>
+</div>
+<p>Soumettez cette tâche à l’ordonnanceur :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@iv11]$ </span>sbatch<span class="w"> </span>jupyter-job.sh
+<span class="go">Submitted batch job 284419</span>
+</pre></div>
+</div>
+<p>You pouvez outrepasser les options données dans le script avec des arguments en
+ligne de commande. Cela est pratique si vos besoins changent d’une session à
+l’autre. Par exemple :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@iv11]$ </span>sbatch<span class="w"> </span>--time<span class="o">=</span><span class="m">8</span>:00:00<span class="w"> </span>--mem-per-cpu<span class="o">=</span>8G<span class="w"> </span>jupyter-job.sh
+<span class="go">Submitted batch job 284421</span>
+</pre></div>
+</div>
+</section>
+<section id="etablir-un-tunnel-ssh">
+<h2>Établir un tunnel SSH<a class="headerlink" href="#etablir-un-tunnel-ssh" title="Lien vers cette rubrique">¶</a></h2>
+<p>Vérifiez avec <code class="docutils literal notranslate"><span class="pre">sq</span></code> que votre tâche a démarré :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@iv11]$ </span>sq
+<span class="go">      JOBID     USER    PARTITION           NAME  ST  TIME_LEFT NODES CPUS TRES_PER_N MIN_MEM NODELIST (REASON)</span>
+<span class="go">     284421    alice      iq-main        jupyter   R    7:58:02     1    2        N/A      8G cp3702 (None)</span>
+</pre></div>
+</div>
+<p>Consultez le fichier de sortie de la tâche pour vous assurez que le serveur
+lui-même a démarré :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">[alice@iv11]$ </span>cat<span class="w"> </span>slurm-284421.out
+<span class="go">...</span>
+<span class="go">To access the server, open this file in a browser:</span>
+<span class="go">    file:///home/alice/.local/share/jupyter/runtime/jpserver-2454410-open.html</span>
+<span class="go">Or copy and paste one of these URLs:</span>
+<span class="go">    http://cp3702.m:8889/lab?token=c3178f7357e6a5bb78a5df56b4cd6672034850719b937410</span>
+<span class="go">    http://127.0.0.1:8889/lab?token=c3178f7357e6a5bb78a5df56b4cd6672034850719b937410</span>
+<span class="go">...</span>
+</pre></div>
+</div>
+<p>Notez le nœud de calcul et le port du serveur, ici <code class="docutils literal notranslate"><span class="pre">cp3702</span></code> et 8889,
+respectivement.</p>
+<p>Puisqu’il n’est pas possible de se connecter directement à un nœud de calcul à
+partir de l’extérieur de la grappe, vous devez d’abord transférer le port
+utilisé par le serveur vers votre ordinateur local. Cela devrait être fait avec
+un tunnel SSH. Pour transférer le port distant 8889 sur <code class="docutils literal notranslate"><span class="pre">cp3702</span></code> vers le port
+local 8888 sur votre ordinateur, en passant à travers le nœud de connexion de la
+grappe, utilisez la commande suivante <em>sur votre ordinateur local</em> :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>-N<span class="w"> </span>-S<span class="w"> </span>none<span class="w"> </span>-L<span class="w"> </span><span class="m">8888</span>:cp3702:8889<span class="w"> </span>alice@hpc.iq.ccs.usherbrooke.ca
+</pre></div>
+</div>
+<p>L’option <code class="docutils literal notranslate"><span class="pre">-L</span></code> établit le tunnel. <code class="docutils literal notranslate"><span class="pre">-N</span></code> est utilisée pour ne pas exécuter de
+commande distante ; nous voulons seulement établir le tunnel. <code class="docutils literal notranslate"><span class="pre">-S</span> <span class="pre">none</span></code> évite
+le partage de connexions (<code class="docutils literal notranslate"><span class="pre">ControlMaster</span></code>), qui interfère avec les tunnels.</p>
+<p>Une fois établi, le tunnel restera actif jusqu’à ce que vous interrompiez la
+commande <code class="docutils literal notranslate"><span class="pre">ssh</span></code>, e.g. avec <code class="docutils literal notranslate"><span class="pre">Control+C</span></code>.</p>
+</section>
+<section id="se-connecter-au-serveur">
+<h2>Se connecter au serveur<a class="headerlink" href="#se-connecter-au-serveur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Dans votre navigateur web, entrez l’adresse 127.0.0.1:8888, où 8888 est le port
+<em>local</em> que vous avez utilisé pour établir le tunnel SSH.</p>
+<p>Lors de votre première connexion, vous devrez copier/coller le jeton
+d’authentification donné dans le fichier de sortie de la tâche. Dans l’exemple
+ci-dessus, il s’agit de <code class="docutils literal notranslate"><span class="pre">c3178f7357e6a5bb78a5df56b4cd6672034850719b937410</span></code>.
+Vous pouvez optionnellement choisir un mot de passe à utiliser plutôt qu’un
+jeton aléatoire dans vos sessions futures. Vous pouvez également sauvegarder ce
+mot de passer dans le gestionnaire de mots de passe de votre navigateur.</p>
+</section>
+<section id="se-reconnecter-au-serveur">
+<h2>Se reconnecter au serveur<a class="headerlink" href="#se-reconnecter-au-serveur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Si vous êtes déconnecté de JupyterLab avant d’avoir terminé votre travail, vous
+pouvez rétablir la connection en créant un nouveau tunnel SSH. Le serveur
+lui-même n’a pas besoin d’être redémarré car il continue de s’exécuter dans la
+tâche de calcul sur la grappe.</p>
+<p>Votre système d’exploitation pourrait ne pas libérer immédiatement le port local
+que vous avez utilisé pour créer le tunnel SSH initial. Dans ce cas, vous ferez
+face à l’erreur suivante lorsque vous essaierez de réutiliser le port :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">bind [127.0.0.1]:8888: Address already in use</span>
+</pre></div>
+</div>
+<p>Pour éviter ce problème, utilisez simplement un port différent pour créer le
+nouveau tunnel.</p>
+<p>Si vous êtes fréquemment déconnecté pendant que vous attendez la complétion d’un
+calcul, ajoutez l’option suivante à votre fichier de configuration SSH,
+<code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code>, sur votre ordinateur local :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ServerAliveInterval</span> <span class="mi">60</span>
+</pre></div>
+</div>
+<p>Cela envoie un signal au serveur distant à intervalles de 60 secondes afin de
+maintenir la connexion active. Si cela ne règle pas votre problème, considérez
+l’utilisation d’<a class="reference external" href="https://www.harding.motd.ca/autossh/">autossh</a> afin
+d’automatiser le redémarrage de votre tunnel SSH.</p>
+</section>
+<section id="arreter-le-serveur">
+<h2>Arrêter le serveur<a class="headerlink" href="#arreter-le-serveur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Lorsque vous avez terminé votre travail, vous devriez éteindre le serveur
+JupyterLab pour libérer les ressources allouées. La façon la plus simple de le
+faire est à partir du menu, avec <em>File</em> → <em>Shut Down</em>. Alternativement, vous
+pouvez annuler la tâche avec :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[alice@iv11]$ scancel 284421
+</pre></div>
+</div>
+<p>Si vous fermez simplement votre navigateur ou que vous choisissez <em>File</em> → <em>Log
+Out</em> dans le menu, le serveur continuera de s’exécuter sur la grappe avec les
+ressources allouées.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="mathematica.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Mathematica</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="ansys.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Ansys</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022-2026, CCS
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">JupyterLab</a><ul>
+<li><a class="reference internal" href="#installer-jupyterlab">Installer JupyterLab</a></li>
+<li><a class="reference internal" href="#demarrer-le-serveur">Démarrer le serveur</a></li>
+<li><a class="reference internal" href="#etablir-un-tunnel-ssh">Établir un tunnel SSH</a></li>
+<li><a class="reference internal" href="#se-connecter-au-serveur">Se connecter au serveur</a></li>
+<li><a class="reference internal" href="#se-reconnecter-au-serveur">Se reconnecter au serveur</a></li>
+<li><a class="reference internal" href="#arreter-le-serveur">Arrêter le serveur</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=e6b791cb"></script>
+    </body>
+</html>
