@@ -53,9 +53,9 @@ with options:
 .. note::
 
     The Pyqcm authors `report low performance with BLIS
-    <https://qcm-wed.readthedocs.io/en/stable/parallel.html#numerical-integration>`_.
+    <https://qcm-wed.readthedocs.io/en/latest/parallel.html#numerical-integration>`_.
     On the IQ Cluster, Intel MKL is used by default.
 
 .. seealso::
 
-    - `Pyqcm documentation <https://dsenech.github.io/qcm_wed_doc/>`_
+    - `Pyqcm documentation <https://qcm-wed.readthedocs.io/>`_

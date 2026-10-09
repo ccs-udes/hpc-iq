@@ -56,10 +56,10 @@ pour expérimenter avec des options :
 .. note::
 
     Les auteurs de Pyqcm `rapportent une faible performance avec BLIS
-    <https://qcm-wed.readthedocs.io/en/stable/parallel.html#numerical-integration>`_.
-    Sur la Grappe IQ, Intel MKL est utilisé par défaut à travers
-    l’interface FlexiBLAS.
+    <https://qcm-wed.readthedocs.io/en/latest/parallel.html#numerical-integration>`_.
+    Sur la Grappe IQ, Intel MKL est utilisé par défaut à travers l’interface
+    FlexiBLAS.
 
 .. seealso::
 
-    - `Documentation de Pyqcm <https://dsenech.github.io/qcm_wed_doc/>`_
+    - `Documentation de Pyqcm <https://qcm-wed.readthedocs.io/>`_
