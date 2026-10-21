@@ -15,7 +15,7 @@ Login nodes
 Use the login node (``iv11``) to prepare your jobs using command line tools.
 
 The use of integrated development environments (IDEs) that connect to the login
-node is forbidden. This includes Visual Studio Code and PyCham. These tools
+node is forbidden. This includes Visual Studio Code and PyCharm. These tools
 constantly index the files they have access to, which slows down reading and
 writing files for all connected researchers. For similar reasons, agentic
 artificial intelligence tools such as Claude Code are not allowed on the login
